@@ -2,3 +2,6 @@
 @import "mockup";
 
 
+.container-fluid, .container{
+	@extend %color-border;
+}
