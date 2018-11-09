@@ -10,12 +10,20 @@ $dark-grey: #252934;
 $footer: #1B242F;
 $nav-bottom: #04C2C9;
 
+*{
+		padding: 0;
+		margin: 0;
+}
+
 body{
 	background: black;
+	color: white;
+
 }
 
 .container-fluid, .container{
 	@extend %color-border;
+	padding: 0;
 }
 
 .navbar{
@@ -29,10 +37,18 @@ body{
 .intro-container{
 	background: $dark-grey;
 	height: 700px;
+	position: relative;
 	.intro-div{
 		width: 80vw;
 		height: 300px;
 		@extend %color-border;
+	}
+	.navbar2{
+		position: absolute;
+		bottom: 0;
+		@extend %color-border;
+		height: 50px;
+		width: 100vw;
 	}
 
 }
@@ -40,14 +56,58 @@ body{
 // ABOUT CONTAINER
 .about-container{
 	background: #fff;
-	height: 700px;
-
+	// height: 700px;
+	color: $footer;
+	.about-header{
+		height: 300px;
+		// width: 100vw;
+		
+		@extend %color-border;
+	}
+	.traits{
+		
+		@extend %color-border;
+		margin: 0px 20px 0px 20px;
+		.trait{
+			height: 200px;
+			@extend %color-border;
+		}
+	}
+	.pic-strengths{
+			
+			@extend %color-border;	
+	}
+		.pic{
+			@extend %color-border;	
+			height: 500px;		
+	}
+		.strengths{
+			@extend %color-border;
+			height: 500px;
+	}
 }
 
 // PROJECTS CONTAINER
 .projects-container{
-	height: 700px;
+	// height: 700px;
 	background: $light-grey;
+	color: $footer;
+	.projects-header{
+		@extend %color-border;
+		height: 300px;
+	}
+	.technologies{
+		height: 50px;
+	}
+	.projects{
+		@extend %color-border;
+		margin: 0px 20px 0px 20px;
+		padding-bottom: 100px;
+		.project{
+			height: 300px;
+			@extend %color-border;
+		}
+	}
 }
 
 // INTERESTS CONTAINER

@@ -6363,20 +6363,28 @@ a.text-dark:focus, a.text-dark:hover {
   right: 0;
   left: 0; }
 
-.container-fluid, .container, .intro-container .intro-div, footer {
+.container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
   outline: 2px solid yellow; }
   @media (min-width: 576px) {
-    .container-fluid, .container, .intro-container .intro-div, footer {
+    .container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
       outline: 2px solid orange; } }
   @media (min-width: 768px) {
-    .container-fluid, .container, .intro-container .intro-div, footer {
+    .container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
       outline: 2px solid red; } }
   @media (min-width: 992px) {
-    .container-fluid, .container, .intro-container .intro-div, footer {
+    .container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
       outline: 2px solid purple; } }
 
+* {
+  padding: 0;
+  margin: 0; }
+
 body {
-  background: black; }
+  background: black;
+  color: white; }
+
+.container-fluid, .container {
+  padding: 0; }
 
 .navbar {
   color: white;
@@ -6385,18 +6393,43 @@ body {
 
 .intro-container {
   background: #252934;
-  height: 700px; }
+  height: 700px;
+  position: relative; }
   .intro-container .intro-div {
     width: 80vw;
     height: 300px; }
+  .intro-container .navbar2 {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100vw; }
 
 .about-container {
   background: #fff;
-  height: 700px; }
+  color: #1B242F; }
+  .about-container .about-header {
+    height: 300px; }
+  .about-container .traits {
+    margin: 0px 20px 0px 20px; }
+    .about-container .traits .trait {
+      height: 200px; }
+  .about-container .pic {
+    height: 500px; }
+  .about-container .strengths {
+    height: 500px; }
 
 .projects-container {
-  height: 700px;
-  background: #F5F5F5; }
+  background: #F5F5F5;
+  color: #1B242F; }
+  .projects-container .projects-header {
+    height: 300px; }
+  .projects-container .technologies {
+    height: 50px; }
+  .projects-container .projects {
+    margin: 0px 20px 0px 20px;
+    padding-bottom: 100px; }
+    .projects-container .projects .project {
+      height: 300px; }
 
 .interests-container {
   height: 700px;
