@@ -2,6 +2,79 @@
 @import "mockup";
 
 
+// COLORS
+$nav-blue: #03108f;
+$light-grey: #F5F5F5;
+$medium-grey: #bcbaba;
+$dark-grey: #252934;
+$footer: #1B242F;
+$nav-bottom: #04C2C9;
+
+body{
+	background: black;
+}
+
 .container-fluid, .container{
 	@extend %color-border;
 }
+
+.navbar{
+	color: white;
+	background: $footer;
+	border-bottom: 2px solid $nav-bottom;
+
+}
+
+// INTRO CONTAINER
+.intro-container{
+	background: $dark-grey;
+	height: 700px;
+	.intro-div{
+		width: 80vw;
+		height: 300px;
+		@extend %color-border;
+	}
+
+}
+
+// ABOUT CONTAINER
+.about-container{
+	background: #fff;
+	height: 700px;
+
+}
+
+// PROJECTS CONTAINER
+.projects-container{
+	height: 700px;
+	background: $light-grey;
+}
+
+// INTERESTS CONTAINER
+.interests-container{
+	height: 700px;
+	background: #fff;
+}
+
+// // EDUCATION CONTAINER
+// .education-container{
+// 	height: 700px;
+// 	background: $medium-grey;
+// }
+
+// CONTACT CONTAINER
+.contact-container{
+	height: 700px;
+	background: $dark-grey;
+}
+
+// FOOTER
+footer{
+	@extend %color-border;
+	height: 300px;
+	background: $footer;
+}
+
+
+
+

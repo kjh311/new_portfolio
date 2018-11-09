@@ -6363,16 +6363,51 @@ a.text-dark:focus, a.text-dark:hover {
   right: 0;
   left: 0; }
 
-.container-fluid, .container {
+.container-fluid, .container, .intro-container .intro-div, footer {
   outline: 2px solid yellow; }
   @media (min-width: 576px) {
-    .container-fluid, .container {
+    .container-fluid, .container, .intro-container .intro-div, footer {
       outline: 2px solid orange; } }
   @media (min-width: 768px) {
-    .container-fluid, .container {
+    .container-fluid, .container, .intro-container .intro-div, footer {
       outline: 2px solid red; } }
   @media (min-width: 992px) {
-    .container-fluid, .container {
+    .container-fluid, .container, .intro-container .intro-div, footer {
       outline: 2px solid purple; } }
+
+body {
+  background: black; }
+
+.navbar {
+  color: white;
+  background: #1B242F;
+  border-bottom: 2px solid #04C2C9; }
+
+.intro-container {
+  background: #252934;
+  height: 700px; }
+  .intro-container .intro-div {
+    width: 80vw;
+    height: 300px; }
+
+.about-container {
+  background: #fff;
+  height: 700px; }
+
+.projects-container {
+  height: 700px;
+  background: #F5F5F5; }
+
+.interests-container {
+  height: 700px;
+  background: #fff; }
+
+.contact-container {
+  height: 700px;
+  background: #252934; }
+
+footer {
+  height: 300px;
+  background: #1B242F; }
 
 /*# sourceMappingURL=style.css.map */
