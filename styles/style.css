@@ -6363,16 +6363,16 @@ a.text-dark:focus, a.text-dark:hover {
   right: 0;
   left: 0; }
 
-.container-fluid, .container, div, .contact-container .contact-header {
+.container-fluid, .container, div, .intro-container .navbar2, .contact-container .contact-header {
   outline: 2px solid yellow; }
   @media (min-width: 576px) {
-    .container-fluid, .container, div, .contact-container .contact-header {
+    .container-fluid, .container, div, .intro-container .navbar2, .contact-container .contact-header {
       outline: 2px solid orange; } }
   @media (min-width: 768px) {
-    .container-fluid, .container, div, .contact-container .contact-header {
+    .container-fluid, .container, div, .intro-container .navbar2, .contact-container .contact-header {
       outline: 2px solid red; } }
   @media (min-width: 992px) {
-    .container-fluid, .container, div, .contact-container .contact-header {
+    .container-fluid, .container, div, .intro-container .navbar2, .contact-container .contact-header {
       outline: 2px solid purple; } }
 
 * {
@@ -6396,7 +6396,7 @@ body {
   height: 700px;
   position: relative; }
   .intro-container .intro-div {
-    width: 80vw;
+    width: 100vw;
     height: 300px; }
   .intro-container .navbar2 {
     position: absolute;
@@ -6455,7 +6455,7 @@ body {
     .contact-container .icons-div .icon-wrapper {
       height: auto; }
   .contact-container .underline {
-    width: 60%;
+    width: 70%;
     border: 1px solid #04C2C9;
     position: absolute;
     margin: auto;
@@ -6464,7 +6464,8 @@ body {
     right: 0; }
 
 footer {
-  height: 300px;
+  color: white;
+  height: 200px;
   background: #1B242F; }
 
 /*# sourceMappingURL=style.css.map */
