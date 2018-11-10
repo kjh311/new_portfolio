@@ -60,7 +60,14 @@ body{
 	color: white;
 	background: $footer;
 	border-bottom: 2px solid $nav-bottom;
-
+	position: relative;
+	.navbar-collapse{
+		position: absolute;
+		right: 50px;
+	}
+	.nav-link{
+		margin: 0px 20px 0px 20px;
+	}
 }
 
 // INTRO CONTAINER

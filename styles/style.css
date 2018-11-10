@@ -6389,7 +6389,13 @@ body {
 .navbar {
   color: white;
   background: #1B242F;
-  border-bottom: 2px solid #04C2C9; }
+  border-bottom: 2px solid #04C2C9;
+  position: relative; }
+  .navbar .navbar-collapse {
+    position: absolute;
+    right: 50px; }
+  .navbar .nav-link {
+    margin: 0px 20px 0px 20px; }
 
 .intro-container {
   background: #252934;
