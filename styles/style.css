@@ -6363,16 +6363,16 @@ a.text-dark:focus, a.text-dark:hover {
   right: 0;
   left: 0; }
 
-.container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
+.container-fluid, .container, div, .contact-container .contact-header {
   outline: 2px solid yellow; }
   @media (min-width: 576px) {
-    .container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
+    .container-fluid, .container, div, .contact-container .contact-header {
       outline: 2px solid orange; } }
   @media (min-width: 768px) {
-    .container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
+    .container-fluid, .container, div, .contact-container .contact-header {
       outline: 2px solid red; } }
   @media (min-width: 992px) {
-    .container-fluid, .container, .intro-container .intro-div, .intro-container .navbar2, .about-container .about-header, .about-container .traits, .about-container .traits .trait, .about-container .pic-strengths, .about-container .pic, .about-container .strengths, .projects-container .projects-header, .projects-container .projects, .projects-container .projects .project, footer {
+    .container-fluid, .container, div, .contact-container .contact-header {
       outline: 2px solid purple; } }
 
 * {
@@ -6383,7 +6383,7 @@ body {
   background: black;
   color: white; }
 
-.container-fluid, .container {
+.container-fluid, .container, div {
   padding: 0; }
 
 .navbar {
@@ -6432,12 +6432,36 @@ body {
       height: 300px; }
 
 .interests-container {
-  height: 700px;
-  background: #fff; }
+  background: #fff;
+  color: #1B242F; }
+  .interests-container .interests-header {
+    height: 300px; }
+  .interests-container .interests {
+    margin: 0px 20px 0px 20px;
+    padding-bottom: 100px; }
+    .interests-container .interests .interest {
+      height: 300px; }
 
 .contact-container {
-  height: 700px;
-  background: #252934; }
+  background: #252934;
+  color: white;
+  position: relative; }
+  .contact-container .contact-header {
+    height: 300px; }
+  .contact-container .icons-div {
+    width: 100vw;
+    padding: 50px 0px 50px 0px;
+    margin: 0; }
+    .contact-container .icons-div .icon-wrapper {
+      height: auto; }
+  .contact-container .underline {
+    width: 60%;
+    border: 1px solid #04C2C9;
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0; }
 
 footer {
   height: 300px;
