@@ -6,6 +6,14 @@
 
 * animated icon on hover
 
+##For Projects I want to showcase to a potential employer that I can:
+* DESIGN websites
+* showcase Animation and Transistions (UI/UX developer)
+* Solve proplems (JS)(age gate/)
+* Tie into API's
+
+
+https://coolors.co
 https://www.bestfolios.com/home
 https://medium.com/@adaptivepath/jedi-principles-of-ui-animation-2b88423b1dac
 https://www.sitepoint.com/how-to-create-a-portfolio-site-that-will-get-you-hired/

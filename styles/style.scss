@@ -1,12 +1,14 @@
 @import "../bootstrap/scss/bootstrap";
 @import "mockup";
+@import "hover";
 
 
 // COLORS
 $nav-blue: #03108f;
 $light-grey: #F5F5F5;
 $medium-grey: #bcbaba;
-$dark-grey: #252934;
+// $dark-grey: #252934;
+$dark-grey: #2b3349;
 $footer: #1B242F;
 $nav-bottom: #04C2C9;
 
@@ -60,10 +62,11 @@ body{
 	color: white;
 	background: $footer;
 	border-bottom: 2px solid $nav-bottom;
-	position: relative;
+	// position: relative;
 	.navbar-collapse{
-		position: absolute;
-		right: 50px;
+		// position: absolute;
+		// right: 50px;
+		// float: right;
 	}
 	.nav-link{
 		margin: 0px 20px 0px 20px;
