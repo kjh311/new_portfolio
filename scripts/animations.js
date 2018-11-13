@@ -14,9 +14,9 @@ $( document ).ready(function() {
     	 if ($(".navbar-toggler").hasClass("collapsed")) {
 			  // Closed
 			  // alert("closed")
-			  // tl.reverse()
+			  tl.reverse()
 			  // tl.pause()
-			  tl.time(0)
+			  // tl.time(0)
 			  // tl.pause()
 			} else {
 			  // Open

@@ -49,17 +49,20 @@ $nav-bottom: #04C2C9;
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body{
 	background: black;
 	color: white;
 
+
 }
 
 .container-fluid, .container, div{
 	// @extend %color-border;
 	padding: 0;
+	overflow: hidden;
 }
 
 
@@ -67,6 +70,7 @@ body{
 
 .navbar{
 	overflow: hidden;
+	top: 0;
   // background-color: #f1f1f1;
   padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */

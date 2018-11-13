@@ -10109,10 +10109,12 @@ body {
   color: white; }
 
 .container-fluid, .container, div {
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 .navbar {
   overflow: hidden;
+  top: 0;
   padding: 15px 10px;
   /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s;
