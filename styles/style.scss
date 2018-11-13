@@ -1,0 +1,263 @@
+@import "../bootstrap/scss/bootstrap";
+@import "mockup";
+@import "hover";
+
+
+// COLORS
+$nav-blue: #03108f;
+$light-grey: #F5F5F5;
+$medium-grey: #bcbaba;
+// $dark-grey: #252934;
+$dark-grey: #2b3349;
+$footer: #1B242F;
+$nav-bottom: #04C2C9;
+
+// $nav-blue: #03108f;
+// $light-grey: #F5F5F5;
+// $medium-grey: #bcbaba;
+// $dark-grey: #1F487E;
+// $footer: #1D3461;
+// $nav-bottom: #247BA0;
+
+// $nav-blue: #03108f;
+// $light-grey: #F5F5F5;
+// $medium-grey: #bcbaba;
+// $dark-grey: #33287a;
+// $footer: #0c0056;
+// $nav-bottom: #A682FF;
+
+
+// COOLER SCHEMES:
+// FB3640
+// 605F5E
+// 1D3461
+// 1F487E
+// 247BA0
+
+// A682FF
+// 715AFF
+// 5887FF
+// 55C1FF
+// 1E2019
+
+
+
+*{
+		padding: 0;
+		margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	background: black;
+	color: white;
+
+}
+
+.container-fluid, .container, div{
+	// @extend %color-border;
+	padding: 0;
+}
+
+
+
+
+.navbar{
+	overflow: hidden;
+  // background-color: #f1f1f1;
+  padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  // position: fixed; /* Sticky/fixed navbar */
+  // width: 100%;
+  // top: 0;  At the top 
+  z-index: 99; 
+	color: white;
+	background: $footer;
+	border-bottom: 2px solid $nav-bottom;
+	// position: relative;
+	a{
+		 // float: left;
+		 //  color: black;
+		 //  text-align: center;
+		  padding: 12px;
+		  text-decoration: none;
+		  font-size: 18px; 
+		  line-height: 25px;
+		  border-radius: 4px;
+		  transition: 0.4s;
+	}
+	.navbar-brand{
+		font-size: 35px;
+		  font-weight: bold;
+		  transition: 0.4s;
+	}
+	.navbar-collapse{
+		// position: absolute;
+		// right: 50px;
+		// float: right;
+	}
+	.navbar-toggler{
+		transition: 0.4s;
+		width: 70px;
+		height: 55px;
+	}
+	.navbar-toggler-icon{
+		transition: 0.4s;
+		width: 40px;
+		height: 40px;
+	}
+	.nav-link{
+		margin: 0px 20px 0px 20px;
+	}
+}
+
+// INTRO CONTAINER
+.intro-container{
+	background: $dark-grey;
+	height: 700px;
+	position: relative;
+	.intro-div{
+		width: 100vw;
+		height: 300px;
+		// @extend %color-border;
+	}
+	.navbar2{
+		position: absolute;
+		bottom: 0;
+		@extend %color-border;
+		height: 50px;
+		width: 100vw;
+	}
+
+}
+
+// ABOUT CONTAINER
+.about-container{
+	background: #fff;
+	// height: 700px;
+	color: $footer;
+	.about-header{
+		height: 300px;
+		// width: 100vw;
+		
+		// @extend %color-border;
+	}
+	.traits{
+		
+		// @extend %color-border;
+		margin: 0px 20px 0px 20px;
+		.trait{
+			height: 200px;
+			// @extend %color-border;
+		}
+	}
+	.pic-strengths{
+			
+			// @extend %color-border;	
+	}
+		.pic{
+			// @extend %color-border;	
+			height: 500px;		
+	}
+		.strengths{
+			// @extend %color-border;
+			height: 500px;
+	}
+}
+
+// PROJECTS CONTAINER
+.projects-container{
+	// height: 700px;
+	background: $light-grey;
+	color: $footer;
+	.projects-header{
+		// @extend %color-border;
+		height: 300px;
+	}
+	.technologies{
+		height: 50px;
+	}
+	.projects{
+		// @extend %color-border;
+		margin: 0px 20px 0px 20px;
+		padding-bottom: 100px;
+		.project{
+			height: 300px;
+			// @extend %color-border;
+		}
+	}
+}
+
+// INTERESTS CONTAINER
+.interests-container{
+	// height: 700px;
+	background: #fff;
+	color: $footer;
+	.interests-header{
+		// @extend %color-border;
+		height: 300px;
+	}
+	.interests{
+		// @extend %color-border;
+		margin: 0px 20px 0px 20px;
+		padding-bottom: 100px;
+		.interest{
+			height: 300px;
+			// @extend %color-border;
+		}
+
+	}
+}
+
+// // EDUCATION CONTAINER
+// .education-container{
+// 	height: 700px;
+// 	background: $medium-grey;
+// }
+
+// CONTACT CONTAINER
+.contact-container{
+	// height: 700px;
+	background: $dark-grey;
+	color: white;
+	position: relative;
+
+	.contact-header{
+		@extend %color-border;
+		height: 300px;
+	}
+	.icons-div{
+		width: 100vw;
+		// height: 200px;
+		padding: 50px 0px 50px 0px;
+		margin: 0;
+		.icon-wrapper{
+			height: auto;
+
+		}
+	}
+	.underline{
+		// margin: 20px 0px 20px 0px;
+		width: 70%;
+		border: 1px solid $nav-bottom;
+		position: absolute;
+		margin: auto;
+  		position: absolute;
+  		left: 0; right: 0;
+	}
+}
+
+// FOOTER
+footer{
+	// @extend %color-border;
+	color: white;
+	height: 200px;
+	background: $footer;
+}
+
+
+
+
