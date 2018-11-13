@@ -30,6 +30,9 @@ https://dribbble.com/shots/4353012-Bryan-Lane-Personal-portfolio/attachments/991
 Indesign tut
 https://www.youtube.com/watch?v=cRNGIoBlzjs
 
+Shrink navbar on scroll:
+https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+
 Photoshop web design:
 https://www.youtube.com/watch?v=GKRQC4fLNHs
 
