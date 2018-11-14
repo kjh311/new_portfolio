@@ -29,6 +29,44 @@ function scrollFunction() {
 }
 
 
+// CHANGE ACTIVE CLASS BY LINK
+$(".navbar-brand").click(function(){
+	$(".navbar-brand").addClass("active");
+	$(".nav-projects").removeClass("active");
+	$(".nav-interests").removeClass("active");
+	$(".nav-about").removeClass("active");
+	$(".nav-contact").removeClass("active");
+});
+$(".nav-about").click(function(){
+	$(".nav-about").addClass("active");
+	$(".nav-projects").removeClass("active");
+	$(".nav-interests").removeClass("active");
+	$(".navbar-brand").removeClass("active");
+	$(".nav-contact").removeClass("active");
+});
+$(".nav-projects").click(function(){
+	$(".nav-projects").addClass("active");
+	$(".nav-about").removeClass("active");
+	$(".nav-interests").removeClass("active");
+	$(".navbar-brand").removeClass("active");
+	$(".nav-contact").removeClass("active");
+});
+$(".nav-interests").click(function(){
+	$(".nav-interests").addClass("active");
+	$(".nav-about").removeClass("active");
+	$(".nav-projects").removeClass("active");
+	$(".navbar-brand").removeClass("active");
+	$(".nav-contact").removeClass("active");
+});
+$(".nav-contact").click(function(){
+	$(".nav-contact").addClass("active");
+	$(".nav-about").removeClass("active");
+	$(".nav-projects").removeClass("active");
+	$(".navbar-brand").removeClass("active");
+	$(".nav-interests").removeClass("active");
+});
+
+
 
 
 

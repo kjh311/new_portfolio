@@ -12,6 +12,10 @@
 * Solve proplems (JS)(age gate/)
 * Tie into API's
 
+TO DO:
+* change active nav links on scroll
+* fix sputtering nav grow and shrink
+
 
 https://coolors.co
 https://www.bestfolios.com/home
