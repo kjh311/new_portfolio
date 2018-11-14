@@ -15,6 +15,7 @@
 TO DO:
 * change active nav links on scroll
 * fix sputtering nav grow and shrink
+* animate dropdown nav links
 
 
 https://coolors.co
