@@ -1,7 +1,7 @@
 @import "../bootstrap/scss/bootstrap";
 @import "mockup";
 @import "hover";
-// @import "stars";
+@import "stars";
 
 
 // COLORS
@@ -9,13 +9,13 @@ $dark-text: #444649;
 $medium-text: #6F6F6F;
 
 
-$nav-blue: #03108f;
-$light-grey: #F5F5F5;
-$medium-grey: #bcbaba;
-// $dark-grey: #252934;
-$dark-grey: #2b3349;
-$footer: #1B242F;
-$nav-bottom: #04C2C9;
+// $nav-blue: #03108f;
+// $light-grey: #F5F5F5;
+// $medium-grey: #bcbaba;
+// // $dark-grey: #252934;
+// $dark-grey: #2b3349;
+// $footer: #1B242F;
+// $nav-bottom: #04C2C9;
 
 
 // $nav-blue: #03108f;
@@ -25,12 +25,12 @@ $nav-bottom: #04C2C9;
 // $footer: #1D3461;
 // $nav-bottom: #247BA0;
 
-// $nav-blue: #03108f;
-// $light-grey: #F5F5F5;
-// $medium-grey: #bcbaba;
-// $dark-grey: #33287a;
-// $footer: #0c0056;
-// $nav-bottom: #A682FF;
+$nav-blue: #03108f;
+$light-grey: #F5F5F5;
+$medium-grey: #bcbaba;
+$dark-grey: #33287a;
+$footer: #0c0056;
+$nav-bottom: #A682FF;
 
 
 // COOLER SCHEMES:
@@ -158,8 +158,23 @@ div {
 	    @include media-breakpoint-up(md) {
 	        padding: 100px 0px 300px 0px;
 	    }
+    .right{
+    		 -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+    transform: rotate(-90deg);
+    // transform: translate(5px, 0px);
+    transition: 0.4s;
+    }
+    .fa-arrow-down{
     
-    
+    }
+    .down{
+    	 -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari 3-8 */
+    transform: rotate(0deg);
+    // transform: translate(5px, 10px);
+    transition: 0.4s;
+    }
 
     .name {
         color: $nav-bottom;
@@ -260,7 +275,7 @@ div {
         // @extend %color-border;
         color: $medium-text;
         margin: 100px 20px 0px 20px;
-        
+
         .icon-div{
         	height: 150px;
         	width: 100%;
@@ -282,11 +297,12 @@ div {
         		line-height: 20px;
         		@include media-breakpoint-up(md) {
 		        	font-size: 18px;
+		        	line-height: 30px;
 		    	}
         	}
         }
         .trait {
-            height: 300px;
+            // height: 300px;
             // @extend %color-border;
             .traits-icon{
             	width: 80%;
@@ -295,6 +311,11 @@ div {
             	border-radius: 50px;
             	padding: 20px;
             }
+            .responsive-icon{
+        		// width: 10vw;
+        		// padding: 10px;
+        		// z-index: 98;
+        	}
         }
     }
 
@@ -379,7 +400,7 @@ div {
     position: relative;
 
     .contact-header {
-        @extend %color-border;
+        // @extend %color-border;
         height: 300px;
     }
 

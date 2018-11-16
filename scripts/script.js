@@ -68,7 +68,14 @@ $(".nav-contact").click(function(){
 
 
 
+// rotate arrow on button hover (intro container)
+$(".view-my-work").hover(function(){
+	$(".fa-arrow-down").addClass('down').removeClass('right');
+});
 
+$(".view-my-work").mouseleave(function(){
+    $(".fa-arrow-down").addClass('right').removeClass('down');
+});
 
 
 
