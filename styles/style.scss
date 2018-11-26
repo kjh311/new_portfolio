@@ -1,7 +1,7 @@
 @import "../bootstrap/scss/bootstrap";
 @import "mockup";
 @import "hover";
-@import "stars";
+// @import "stars";
 
 
 // COLORS
@@ -9,13 +9,13 @@ $dark-text: #444649;
 $medium-text: #6F6F6F;
 
 
-// $nav-blue: #03108f;
-// $light-grey: #F5F5F5;
-// $medium-grey: #bcbaba;
-// // $dark-grey: #252934;
-// $dark-grey: #2b3349;
-// $footer: #1B242F;
-// $nav-bottom: #04C2C9;
+$nav-blue: #03108f;
+$light-grey: #F5F5F5;
+$medium-grey: #bcbaba;
+// $dark-grey: #252934;
+$dark-grey: #2b3349;
+$footer: #1B242F;
+$nav-bottom: #04C2C9;
 
 
 // $nav-blue: #03108f;
@@ -25,12 +25,12 @@ $medium-text: #6F6F6F;
 // $footer: #1D3461;
 // $nav-bottom: #247BA0;
 
-$nav-blue: #03108f;
-$light-grey: #F5F5F5;
-$medium-grey: #bcbaba;
-$dark-grey: #33287a;
-$footer: #0c0056;
-$nav-bottom: #A682FF;
+// $nav-blue: #03108f;
+// $light-grey: #F5F5F5;
+// $medium-grey: #bcbaba;
+// $dark-grey: #33287a;
+// $footer: #0c0056;
+// $nav-bottom: #A682FF;
 
 
 // COOLER SCHEMES:
@@ -246,8 +246,8 @@ div {
         	font-size: 30px;
         	margin-top: 70px;
         	padding: 10px 0px;
-        	opacity: 0;
-        	transform: translateX(-50px);
+        	// opacity: 0;
+        	// transform: translateX(-50px);
         	transition: all 0.4s ease-out;
         	@include media-breakpoint-up(md) {
 	        	font-size: 40px;
@@ -255,11 +255,11 @@ div {
 	        	padding: 15px 0px;
 	    	}
         }
-    .about-header-text-animate{
-		opacity: 1 !important;
-		transform: translateX(0) !important;
-		transition: all 0.4s ease-out;
-	}
+ //    .about-header-text-animate{
+	// 	opacity: 1 !important;
+	// 	transform: translateX(0) !important;
+	// 	transition: all 0.4s ease-out;
+	// }
         .about-underline{
         	width: 100px;
         	height: 3px;
