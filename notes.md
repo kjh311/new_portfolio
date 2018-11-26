@@ -44,3 +44,6 @@ https://www.youtube.com/watch?v=GKRQC4fLNHs
 Greensock fires scroll
 https://greensock.com/forums/topic/17220-can-gsap-animation-be-tied-to-scroll/
 https://greensock.com/forums/topic/6182-start-an-animation-based-on-scroll-position/
+
+Don't replay animation on scroll up:
+https://codepen.io/mikeK/pen/mmdJjy?editors=1010
