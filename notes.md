@@ -17,6 +17,9 @@ TO DO:
 * fix sputtering nav grow and shrink
 * animate dropdown nav links
 
+Animated Bar Charts
+https://tympanus.net/Tutorials/Animated3DBarChart/
+
 
 https://coolors.co
 https://www.bestfolios.com/home
