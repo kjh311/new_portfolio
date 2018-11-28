@@ -246,7 +246,7 @@ div {
         	font-size: 30px;
         	margin-top: 70px;
         	padding: 10px 0px;
-        	// opacity: 0;
+        	opacity: 0;
         	// transform: translateX(-50px);
         	transition: all 0.4s ease-out;
         	@include media-breakpoint-up(md) {
@@ -262,16 +262,21 @@ div {
 	// }
         .about-underline{
         	width: 100px;
+        	
         	height: 3px;
         	background-color: $dark-text;
         	position: absolute;
         	margin: auto;
    			left: 0;
     		right: 0;
+    		opacity: 0;
         }
 
     .traits {
-
+    	
+    	.fast-traits, .responsive-traits, .intuitive-traits, .dynamic-traits{
+    		opacity: 0;
+    	}
         // @extend %color-border;
         color: $medium-text;
         margin: 100px 20px 0px 20px;
@@ -304,6 +309,7 @@ div {
         .trait {
             // height: 300px;
             // @extend %color-border;
+
             .traits-icon{
             	width: 80%;
             	max-height: 80%;
@@ -318,7 +324,9 @@ div {
         	}
         }
     }
-
+    .passion-text{
+    	max-width: 80%;
+    }
     .pic-strengths {
 
         // @extend %color-border;	
