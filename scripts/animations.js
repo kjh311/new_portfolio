@@ -34,8 +34,8 @@ about.duration( 0.3 );
 // About Underline timeline
 	var about_underline = new TimelineMax();
 
-	about_underline.from($(".about-underline"), 0.33, {ease: Power0.easeNone, x: '+=100px', alpha:0})
-	.to($(".about-underline"), 0.1, {ease: Power0.easeNone, x: '0', alpha:1});
+	about_underline.from($(".about-underline"), 0.33, {ease: Power0.easeOut, x: '+=300', alpha:0})
+	.to($(".about-underline"), 0.3, {ease: Power0.easeNone, x: '0', alpha:1});
 
 	//  scene
 	var scene = new ScrollMagic.Scene({	
@@ -47,7 +47,8 @@ about.duration( 0.3 );
    scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
   ;
   about_underline.delay( 0 );
-about_underline.duration( 0.3 );
+about_underline.duration( .3 );
+
 
 // Fast Trait timeline
 	var fast_trait = new TimelineMax();
@@ -67,6 +68,7 @@ about_underline.duration( 0.3 );
   fast_trait.delay( 0 );
 fast_trait.duration( 2 );
 
+
 // Responsive Trait timeline
 	var responsive_trait = new TimelineMax();
 
@@ -84,6 +86,7 @@ fast_trait.duration( 2 );
   ;
   responsive_trait.delay( 0.05 );
 responsive_trait.duration( 2 );
+
 
 // Intuitive Trait timeline
 	var intuitive_trait = new TimelineMax();
@@ -121,6 +124,7 @@ intuitive_trait.duration( 2 );
   dynamic_trait.delay( 0.15 );
 dynamic_trait.duration( 2 );
 
+
 // Pic Wrapper timeline
 	var pic_wrapper = new TimelineMax();
 
@@ -139,6 +143,7 @@ dynamic_trait.duration( 2 );
   pic_wrapper.delay( 0 );
 pic_wrapper.duration( 2 );
 
+
 // Strengths Wrapper timeline
 	var strengths_wrapper = new TimelineMax();
 
@@ -156,6 +161,120 @@ pic_wrapper.duration( 2 );
   ;
   strengths_wrapper.delay( 0 );
 strengths_wrapper.duration( 2 );
+
+
+// HTML bar
+	var html_wrapper = new TimelineMax();
+
+	html_wrapper.from($(".animated-bar-html"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-html"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".pic-strengths",	
+
+  })
+		.setTween(html_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  html_wrapper.delay( .2 );
+html_wrapper.duration( 3 );
+
+
+// CSS bar
+	var css_wrapper = new TimelineMax();
+
+	css_wrapper.from($(".animated-bar-css"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-css"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".pic-strengths",	
+
+  })
+		.setTween(css_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.css#reverse
+  ;
+  css_wrapper.delay( .2 );
+css_wrapper.duration( 3 );
+
+
+// Javascript bar
+	var javascript_wrapper = new TimelineMax();
+
+	javascript_wrapper.from($(".animated-bar-javascript"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-javascript"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".pic-strengths",	
+
+  })
+		.setTween(javascript_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.javascript#reverse
+  ;
+  javascript_wrapper.delay( .2 );
+javascript_wrapper.duration( 3 );
+
+
+// angular bar
+	var angular_wrapper = new TimelineMax();
+
+	angular_wrapper.from($(".animated-bar-angular"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-angular"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".pic-strengths",	
+
+  })
+		.setTween(angular_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.angular#reverse
+  ;
+  angular_wrapper.delay( .2 );
+angular_wrapper.duration( 3 );
+
+
+// node bar
+	var node_wrapper = new TimelineMax();
+
+	node_wrapper.from($(".animated-bar-node"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-node"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".pic-strengths",	
+
+  })
+		.setTween(node_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.node#reverse
+  ;
+  node_wrapper.delay( .2 );
+node_wrapper.duration( 3 );
+
+
+// photoshop bar
+	var photoshop_wrapper = new TimelineMax();
+
+	photoshop_wrapper.from($(".animated-bar-photoshop"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-photoshop"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".pic-strengths",	
+
+  })
+		.setTween(photoshop_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.photoshop#reverse
+  ;
+  photoshop_wrapper.delay( .2 );
+photoshop_wrapper.duration( 3 );
 
 
 });

@@ -18,8 +18,10 @@ TO DO:
 * animate dropdown nav links
 
 Animated Bar Charts
-https://tympanus.net/Tutorials/Animated3DBarChart/
+https://tympanus.net/Tutorials/Animated3DBarChart/38th Annual Spirit of San Pedro Holiday Parade
 
+Animate numbers:
+https://codepen.io/GreenSock/pen/hzfji
 
 https://coolors.co
 https://www.bestfolios.com/home

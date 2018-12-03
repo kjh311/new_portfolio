@@ -10113,7 +10113,7 @@ div {
   /* Adds a transition effect when the padding is decreased */
   z-index: 99;
   color: white;
-  background: #1B242F;
+  background: #1e3e63;
   border-bottom: 2px solid #04C2C9; }
   .navbar a {
     padding: 12px;
@@ -10195,7 +10195,7 @@ div {
 
 .about-container {
   background: #fff;
-  color: #1B242F; }
+  color: #1e3e63; }
   .about-container .about-header-text {
     color: #444649;
     font-size: 30px;
@@ -10251,13 +10251,60 @@ div {
     max-width: 50%;
     margin-top: 20px; }
   .about-container .pic {
-    height: 500px; }
+    height: auto;
+    margin: 30px 0 30px 0; }
   .about-container .strengths {
-    height: 500px; }
+    height: auto;
+    margin: 30px 0 30px 0; }
+    .about-container .strengths .strength {
+      margin: 5px 40px 5px 40px;
+      padding: 0px;
+      overflow: visible;
+      position: relative;
+      z-index: 8; }
+      .about-container .strengths .strength .strength-text {
+        background-color: #04C2C9;
+        width: 25%;
+        height: 100%;
+        padding: 5px 0 5px 0;
+        z-index: 11;
+        color: white; }
+      .about-container .strengths .strength .animated-bar {
+        background-color: #1e3e63;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: -1; }
+      .about-container .strengths .strength .animated-bar-html {
+        width: 80%; }
+      .about-container .strengths .strength .animated-bar-css {
+        width: 75%; }
+      .about-container .strengths .strength .animated-bar-javascript {
+        width: 70%; }
+      .about-container .strengths .strength .animated-bar-angular {
+        width: 50%; }
+      .about-container .strengths .strength .animated-bar-node {
+        width: 50%; }
+      .about-container .strengths .strength .animated-bar-photoshop {
+        width: 90%; }
+      .about-container .strengths .strength .background {
+        background-color: #F5F5F5;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2; }
+      .about-container .strengths .strength .percent {
+        right: 10px;
+        position: absolute;
+        top: 5px;
+        color: #bcbaba; }
 
 .projects-container {
   background: #F5F5F5;
-  color: #1B242F; }
+  color: #1e3e63; }
   .projects-container .projects-header {
     height: 300px; }
   .projects-container .technologies {
@@ -10270,7 +10317,7 @@ div {
 
 .interests-container {
   background: #fff;
-  color: #1B242F; }
+  color: #1e3e63; }
   .interests-container .interests-header {
     height: 300px; }
   .interests-container .interests {
@@ -10303,6 +10350,6 @@ div {
 footer {
   color: white;
   height: 200px;
-  background: #1B242F; }
+  background: #1e3e63; }
 
 /*# sourceMappingURL=style.css.map */
