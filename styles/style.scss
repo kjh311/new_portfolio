@@ -1,6 +1,7 @@
 @import "../bootstrap/scss/bootstrap";
 @import "mockup";
 @import "hover";
+@import "animista";
 // @import "stars";
 
 
@@ -247,7 +248,7 @@ div {
         	font-size: 30px;
         	margin-top: 70px;
         	padding: 10px 0px;
-        	opacity: 0;
+        	// opacity: 0;
         	// transform: translateX(-50px);
         	transition: all 0.4s ease-out;
         	@include media-breakpoint-up(md) {
@@ -270,7 +271,7 @@ div {
         	margin: auto;
    			left: 0;
     		right: 0;
-    		opacity: 0;
+    		// opacity: 0;
         }
 
     .traits {
@@ -324,6 +325,10 @@ div {
         		// z-index: 98;
         	}
         }
+    }
+    .kev-pic{
+    	width: 50%;
+    	border-radius: 100%;
     }
     .passion-text{
     	max-width: 50%;

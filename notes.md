@@ -20,8 +20,14 @@ TO DO:
 Animated Bar Charts
 https://tympanus.net/Tutorials/Animated3DBarChart/38th Annual Spirit of San Pedro Holiday Parade
 
+animations:
+http://animista.net
+
 Animate numbers:
 https://codepen.io/GreenSock/pen/hzfji
+
+[PURE CSS] border animation without svg:
+https://codepen.io/Rplus/pen/lEDBj
 
 https://coolors.co
 https://www.bestfolios.com/home
