@@ -28,6 +28,33 @@ function scrollFunction() {
   }
 }
 
+// var position = $(window).scrollTop();
+
+// $(window).scroll(function() {
+//   var scroll = $(window).scrollTop();
+//   if (scroll > position) {
+//     // console.log("scrolling downwards");
+//        document.getElementById("navbar").style.padding = "5px 10px";
+//     document.getElementById("navbar-brand").style.fontSize = "25px";
+//     document.getElementById("navbar-toggler").style.width = "66px";
+//     document.getElementById("navbar-toggler").style.height = "40px";
+//     document.getElementById("navbar-toggler-icon").style.height = "30px";
+//     document.getElementById("navbar-toggler-icon").style.height = "30px";
+
+//   } else {
+//     // console.log("scrolling upwards");
+ 
+
+//             document.getElementById("navbar").style.padding = "20px 10px";
+//     document.getElementById("navbar-brand").style.fontSize = "35px";
+//     document.getElementById("navbar-toggler").style.width = "80px";
+//     document.getElementById("navbar-toggler").style.height = "55px";
+//     document.getElementById("navbar-toggler-icon").style.height = "40px";
+//     document.getElementById("navbar-toggler-icon").style.height = "40px";
+//   }
+//   position = scroll;
+// });
+
 
 // CHANGE ACTIVE CLASS BY LINK
 $(".navbar-brand").click(function(){

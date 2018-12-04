@@ -16,6 +16,13 @@ if ($(window).width() > 767) {
 	about.from($(".about-header-text"), 0.33, {ease: Power0.easeNone, x: '-=70px', alpha:0})
 	.to($(".about-header-text"), 0.1, {ease: Power0.easeNone, x: '0', alpha:1});
 
+
+// ADD CLASS
+	// about.call(function() {
+ //    //addClass, toggleClass, or your custom logic.  
+ //    	$('.about-header-text').addClass("text-pop-up-top");
+	// }, null, null, 2);
+
 	//  scene
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".about-container",	
@@ -289,6 +296,96 @@ node_wrapper.duration( 3 );
   ;
   photoshop_wrapper.delay( .3 );
 photoshop_wrapper.duration( 3 );
+
+
+
+// PROJECTS
+if ($(window).width() > 767) {
+  	var projects = new TimelineMax();
+
+	projects.from($(".projects-header-text"), 0.33, {ease: Power0.easeNone, x: '-=70px', alpha:0})
+	.to($(".projects-header-text"), 0.1, {ease: Power0.easeNone, x: '0', alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects-container",	
+
+  })
+		.setTween(projects)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+projects.duration( 0.3 );
+}
+
+
+
+// projects Underline timeline
+if ($(window).width() > 767) {
+	var projects_underline = new TimelineMax();
+
+	projects_underline.from($(".projects-underline"), 0.33, {ease: Power2.easeOut, x: '+=300', alpha:0})
+	.to($(".projects-underline"), 0.3, {ease: Power2.easeOut, x: '0', alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects-container",	
+
+  })
+		.setTween(projects_underline)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  projects_underline.delay( .1 );
+projects_underline.duration( 1.5 );
+}
+
+// technologies
+if ($(window).width() > 767) {
+	var technologies = new TimelineMax();
+
+	technologies.from($(".technologies-li"), 0.33, {alpha:0})
+	.to($(".technologies-li"), 0.3, {alpha:1});
+
+	// 	technologies.call(function() {
+ //    //addClass, toggleClass, or your custom logic.  
+ //    	$('.technologies-li').addClass("tracking-in-expand-fwd");
+	// }, null, null, 2);
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects-container",	
+
+  })
+		.setTween(technologies)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  technologies.delay( .1 );
+technologies.duration( 1.5 );
+}
+
+
+// projects
+if ($(window).width() > 767) {
+	var projects = new TimelineMax();
+
+	projects.from($(".project"), 0.33, {alpha:0})
+	.to($(".project"), 0.3, {alpha:1});
+
+	// 	projects.call(function() {
+ //    //addClass, toggleClass, or your custom logic.  
+ //    	$('.projects-li').addClass("tracking-in-expand-fwd");
+	// }, null, null, 2);
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects-header-text",	
+
+  })
+		.setTween(projects)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  projects.delay( .1 );
+projects.duration( 1.5 );
+}
 
 
 });

@@ -20,6 +20,9 @@ TO DO:
 Animated Bar Charts
 https://tympanus.net/Tutorials/Animated3DBarChart/38th Annual Spirit of San Pedro Holiday Parade
 
+Add class with GSAP:
+https://greensock.com/forums/topic/9662-timelinemax-add-classes/
+
 animations:
 http://animista.net
 
