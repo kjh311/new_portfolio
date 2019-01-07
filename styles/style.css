@@ -10601,7 +10601,6 @@ div {
     margin: 10px 0px 10px 0px;
     width: 100%;
     height: auto;
-    cursor: pointer;
     user-select: none; }
   .projects-container .project-title {
     z-index: 10;
@@ -10632,9 +10631,12 @@ div {
     right: 0;
     left: 0;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    text-decoration: none;
+    color: black; }
   .projects-container .learn-more-button:hover {
-    background-color: red; }
+    background-color: red;
+    color: white; }
   .projects-container .learn-more-active {
     opacity: 1;
     user-select: auto;

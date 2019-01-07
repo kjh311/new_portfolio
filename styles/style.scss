@@ -506,7 +506,7 @@ div {
     	margin: 10px 0px 10px 0px;
     	width: 100%;
 		height: auto;
-    	cursor: pointer;
+    	// cursor: pointer;
     	user-select: none;
     	
     }
@@ -547,9 +547,12 @@ div {
 		left: 0;
   		margin-left: auto; 
   		margin-right: auto; 
+  		text-decoration: none;
+  		color: black;
     }
     .learn-more-button:hover{
     	background-color: red;
+    	color: white;
     }
     .learn-more-active{
     	opacity: 1;

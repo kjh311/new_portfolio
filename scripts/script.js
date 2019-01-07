@@ -125,11 +125,32 @@ $(".view-my-work").mouseleave(function(){
 		$(".learn-more-button-brooks").removeClass("learn-more-deactive").addClass("learn-more-active");
 		$(".project-title-brooks").removeClass("project-title-deactive").addClass("project-title-active");
 });
-
   $(".project-brooks").mouseleave(function(){
 	$(".project-img-brooks").removeClass('hidden');
 		$(".learn-more-button-brooks").removeClass("learn-more-active").addClass("learn-more-deactive");
 		$(".project-title-brooks").removeClass("project-title-active").addClass("project-title-deactive");
+});
+
+ $(".project-movie").mouseover(function(){
+	$(".project-img-movie").addClass('hidden');
+		$(".learn-more-button-movie").removeClass("learn-more-deactive").addClass("learn-more-active");
+		$(".project-title-movie").removeClass("project-title-deactive").addClass("project-title-active");
+});
+  $(".project-movie").mouseleave(function(){
+	$(".project-img-movie").removeClass('hidden');
+		$(".learn-more-button-movie").removeClass("learn-more-active").addClass("learn-more-deactive");
+		$(".project-title-movie").removeClass("project-title-active").addClass("project-title-deactive");
+});
+
+ $(".project-thrones").mouseover(function(){
+	$(".project-img-thrones").addClass('hidden');
+		$(".learn-more-button-thrones").removeClass("learn-more-deactive").addClass("learn-more-active");
+		$(".project-title-thrones").removeClass("project-title-deactive").addClass("project-title-active");
+});
+  $(".project-thrones").mouseleave(function(){
+	$(".project-img-thrones").removeClass('hidden');
+		$(".learn-more-button-thrones").removeClass("learn-more-active").addClass("learn-more-deactive");
+		$(".project-title-thrones").removeClass("project-title-active").addClass("project-title-deactive");
 });
 
 
