@@ -60,6 +60,11 @@ html {
 
 }
 
+// .back{
+// 	z-index: 1;
+// 	user-select: none;
+// }
+
 body {
     background: black;
     color: white;
@@ -75,6 +80,15 @@ div {
     padding: 0;
     overflow: hidden;
 }
+
+.hidden{
+	opacity: 0;
+}
+
+// .forward{
+// 	z-index: 100;
+// 	user-select: text;
+// }
 
 
 
@@ -485,47 +499,68 @@ div {
     .project-img{
     	// width: 100%;
     	// height: 100%;
-    	z-index: 5;
+    	z-index: 1;
     	position: relative;
-    	opacity: 1;
+    	// opacity: 1;
     	transition: 0.4s;
     	margin: 10px 0px 10px 0px;
     	width: 100%;
-height: auto;
+		height: auto;
     	cursor: pointer;
     	user-select: none;
     	
     }
     .project-img:hover{
-    	opacity: 0;
+    	// opacity: 0;
     }
     .project-title{
-    	z-index: 0;
+    	z-index: 10;
     	position: absolute;
-	top: 20%;
-	right: 0;
-	left: 0;
-  margin-left: auto; 
-  margin-right: auto; 	
-
+		top: 20%;
+		right: 0;
+		left: 0;
+	  	margin-left: auto; 
+	  	margin-right: auto; 	
+    }
+    .project-title-active{
+    	opacity: 1;
+    	user-select: auto;
+    	transition: .5s;
+    }
+    .project-title-deactive{
+    	opacity: 0;
+    	user-select: none;
+    	transition: .5s;
+    	margin-top: -40px;
     }
     .red-text{
     	color: red;
     }
     .learn-more-button{
-    	z-index: 0;
+    	z-index: 10;
     	position: absolute;
     	padding: 5px;
     	border: 2px solid red;
     	top: 60%;
     	width: 200px;
     	right: 0;
-	left: 0;
-  margin-left: auto; 
-  margin-right: auto; 
+		left: 0;
+  		margin-left: auto; 
+  		margin-right: auto; 
     }
     .learn-more-button:hover{
     	background-color: red;
+    }
+    .learn-more-active{
+    	opacity: 1;
+    	user-select: auto;
+    	transition: .5s;
+    }
+    .learn-more-deactive{
+    	opacity: 0;
+    	user-select: none;
+    	transition: .5s;
+    	margin-top: 40px;
     }
 
     .projects {
@@ -544,7 +579,7 @@ height: auto;
             // height: 300px;
             height: auto;
             position: relative;
-            opacity: 0;
+            // opacity: 0;
             // @extend %color-border;
 
         }

@@ -118,4 +118,20 @@ $(".view-my-work").mouseleave(function(){
      });
  });
 
+
+ // Change Z-index of project links
+ $(".project-brooks").mouseover(function(){
+	$(".project-img-brooks").addClass('hidden');
+		$(".learn-more-button-brooks").removeClass("learn-more-deactive").addClass("learn-more-active");
+		$(".project-title-brooks").removeClass("project-title-deactive").addClass("project-title-active");
+});
+
+  $(".project-brooks").mouseleave(function(){
+	$(".project-img-brooks").removeClass('hidden');
+		$(".learn-more-button-brooks").removeClass("learn-more-active").addClass("learn-more-deactive");
+		$(".project-title-brooks").removeClass("project-title-active").addClass("project-title-deactive");
+});
+
+
+
 });

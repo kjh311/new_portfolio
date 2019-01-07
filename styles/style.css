@@ -10353,6 +10353,9 @@ div {
   padding: 0;
   overflow: hidden; }
 
+.hidden {
+  opacity: 0; }
+
 .navbar {
   overflow: hidden;
   top: 0;
@@ -10592,29 +10595,35 @@ div {
   .projects-container .technologies-li:hover {
     cursor: pointer; }
   .projects-container .project-img {
-    z-index: 5;
+    z-index: 1;
     position: relative;
-    opacity: 1;
     transition: 0.4s;
     margin: 10px 0px 10px 0px;
     width: 100%;
     height: auto;
     cursor: pointer;
     user-select: none; }
-  .projects-container .project-img:hover {
-    opacity: 0; }
   .projects-container .project-title {
-    z-index: 0;
+    z-index: 10;
     position: absolute;
     top: 20%;
     right: 0;
     left: 0;
     margin-left: auto;
     margin-right: auto; }
+  .projects-container .project-title-active {
+    opacity: 1;
+    user-select: auto;
+    transition: .5s; }
+  .projects-container .project-title-deactive {
+    opacity: 0;
+    user-select: none;
+    transition: .5s;
+    margin-top: -40px; }
   .projects-container .red-text {
     color: red; }
   .projects-container .learn-more-button {
-    z-index: 0;
+    z-index: 10;
     position: absolute;
     padding: 5px;
     border: 2px solid red;
@@ -10626,13 +10635,21 @@ div {
     margin-right: auto; }
   .projects-container .learn-more-button:hover {
     background-color: red; }
+  .projects-container .learn-more-active {
+    opacity: 1;
+    user-select: auto;
+    transition: .5s; }
+  .projects-container .learn-more-deactive {
+    opacity: 0;
+    user-select: none;
+    transition: .5s;
+    margin-top: 40px; }
   .projects-container .projects {
     margin: 70px 5% 0px 5%;
     padding-bottom: 100px; }
     .projects-container .projects .project {
       height: auto;
-      position: relative;
-      opacity: 0; }
+      position: relative; }
 
 .interests-container {
   background: #fff;
