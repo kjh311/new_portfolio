@@ -61,3 +61,6 @@ https://greensock.com/forums/topic/6182-start-an-animation-based-on-scroll-posit
 
 Don't replay animation on scroll up:
 https://codepen.io/mikeK/pen/mmdJjy?editors=1010
+
+Lity Lightbox:
+https://sorgalla.com/lity/

@@ -10356,6 +10356,13 @@ div {
 .hidden {
   opacity: 0; }
 
+.lightbox {
+  border: 2px solid red;
+  width: 800px;
+  max-width: 80vw;
+  height: auto;
+  background-color: black; }
+
 .navbar {
   overflow: hidden;
   top: 0;

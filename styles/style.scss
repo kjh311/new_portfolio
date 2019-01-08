@@ -85,10 +85,14 @@ div {
 	opacity: 0;
 }
 
-// .forward{
-// 	z-index: 100;
-// 	user-select: text;
-// }
+
+.lightbox{
+	border: 2px solid red;
+	width: 800px;
+	max-width: 80vw;
+	height: auto;
+	background-color: black;
+}
 
 
 
