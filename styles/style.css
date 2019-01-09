@@ -10356,13 +10356,6 @@ div {
 .hidden {
   opacity: 0; }
 
-.lightbox {
-  border: 2px solid red;
-  width: 800px;
-  max-width: 80vw;
-  height: auto;
-  background-color: black; }
-
 .navbar {
   overflow: hidden;
   top: 0;
@@ -10696,5 +10689,38 @@ footer {
   color: white;
   height: 200px;
   background: #1e3e63; }
+
+.lightbox {
+  width: 700px;
+  max-width: 100vw;
+  height: auto;
+  max-height: 100vh;
+  position: relative;
+  background-color: #fff; }
+  .lightbox .sub-content {
+    margin: 20px; }
+    .lightbox .sub-content .sub-content-header {
+      color: #2b3349; }
+    .lightbox .sub-content .sub-content-sub-header {
+      color: #bcbaba; }
+    .lightbox .sub-content .sub-content-about {
+      color: #bcbaba;
+      font-size: 0.8em;
+      line-height: 25px;
+      margin-top: 20px; }
+    .lightbox .sub-content .line {
+      width: 100%;
+      height: 1px;
+      border: 1px solid #F5F5F5; }
+    .lightbox .sub-content .close-lightbox {
+      z-index: 1000;
+      opacity: 0.5;
+      width: 30px;
+      height: 30px;
+      display: absolute;
+      right: 20px;
+      cursor: pointer; }
+  .lightbox .carousel-item {
+    border-bottom: 4px solid black; }
 
 /*# sourceMappingURL=style.css.map */

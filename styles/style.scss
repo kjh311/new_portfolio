@@ -86,13 +86,6 @@ div {
 }
 
 
-.lightbox{
-	border: 2px solid red;
-	width: 800px;
-	max-width: 80vw;
-	height: auto;
-	background-color: black;
-}
 
 
 
@@ -666,3 +659,57 @@ footer {
     height: 200px;
     background: $footer;
 }
+
+
+//LIGHTBOX
+.lightbox{
+	// border: 2px solid red;
+	width: 700px;
+	max-width: 100vw;
+	height: auto;
+	max-height: 100vh;
+
+	// top: 0;
+	position: relative;
+	background-color: #fff;
+		.sub-content{
+			margin: 20px;
+			.sub-content-header{
+				color: $dark-grey;
+			}
+			.sub-content-sub-header{
+				color: $medium-grey;
+			}
+			.sub-content-about{
+				color: $medium-grey;
+				font-size: 0.8em;
+				line-height: 25px;
+				margin-top: 20px;
+			}
+			.line{
+				width: 100%;
+				height: 1px;
+				border: 1px solid $light-grey;
+				// color: $dark-grey;
+			}
+			.close-lightbox{
+				z-index: 1000;
+				
+				opacity: 0.5;
+				width: 30px;
+				height: 30px;
+				display: absolute;
+				right: 20px;
+				// bottom: 20px;
+				// padding: 20px;
+				// margin: 10px;
+				cursor: pointer;
+		}
+	}
+	.carousel-item{
+		border-bottom: 4px solid black;
+	}
+}
+
+
+
