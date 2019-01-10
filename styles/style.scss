@@ -20,6 +20,7 @@ $footer: #1e3e63;
 $nav-bottom: #04C2C9;
 
 
+
 // $nav-blue: #03108f;
 // $light-grey: #F5F5F5;
 // $medium-grey: #bcbaba;
@@ -531,13 +532,13 @@ div {
     	margin-top: -40px;
     }
     .red-text{
-    	color: red;
+    	color: $nav-bottom;
     }
     .learn-more-button{
     	z-index: 10;
     	position: absolute;
     	padding: 5px;
-    	border: 2px solid red;
+    	border: 2px solid $nav-bottom;
     	top: 60%;
     	width: 200px;
     	right: 0;
@@ -545,10 +546,10 @@ div {
   		margin-left: auto; 
   		margin-right: auto; 
   		text-decoration: none;
-  		color: black;
+  		color: $nav-bottom;
     }
     .learn-more-button:hover{
-    	background-color: red;
+    	background-color: $nav-bottom;
     	color: white;
     }
     .learn-more-active{
@@ -663,11 +664,13 @@ footer {
 
 //LIGHTBOX
 .lightbox{
-	// border: 2px solid red;
+	// border: 2px solid $nav-bottom;
 	width: 700px;
 	max-width: 100vw;
 	height: auto;
-	max-height: 100vh;
+	// max-height: 100vh;
+	overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
 
 	// top: 0;
 	position: relative;
@@ -684,7 +687,10 @@ footer {
 				color: $medium-grey;
 				font-size: 0.8em;
 				line-height: 25px;
-				margin-top: 20px;
+				margin: 20px 0px;
+			}
+			.sub-content-ul{
+
 			}
 			.line{
 				width: 100%;
@@ -705,9 +711,36 @@ footer {
 				// margin: 10px;
 				cursor: pointer;
 		}
-	}
+		.project-link{
+			text-decoration: none;
+			color: white;
+			padding: 5px 20px;
+			background-color: $nav-bottom;
+			border: 2px solid $nav-bottom;
+			transition: 0.4s;
+		}
+		.project-link:hover{
+			color: $nav-bottom;
+			background-color: white;
+			transition: 0.4s;
+		}
+	}	
 	.carousel-item{
 		border-bottom: 4px solid black;
+	}
+	.carousel-control, .carousel-control-prev, .carousel-control-prev{
+		width: 75px;
+		height: 75px;
+		// margin-top: 316px;
+		display: absolute;
+		bottom: 0;
+
+		// border: 2px solid red;
+		background-color: rgba(228, 233, 237, 0.3)
+	}
+	.carousel-control-icon{
+		width: 30px;
+		height: 30px;
 	}
 }
 
