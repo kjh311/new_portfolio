@@ -388,4 +388,44 @@ projects.duration( 1.5 );
 }
 
 
+// INTERESTS
+if ($(window).width() > 767) {
+  	var interests = new TimelineMax();
+
+	interests.from($(".interests-header"), 0.33, {ease: Power0.easeNone, x: '-=70px', alpha:0})
+	.to($(".interests-header"), 0.1, {ease: Power0.easeNone, x: '0', alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".interests-container",	
+
+  })
+		.setTween(interests)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+interests.duration( 0.3 );
+}
+
+
+
+// Interests Underline timeline
+if ($(window).width() > 767) {
+	var interests_underline = new TimelineMax();
+
+	interests_underline.from($(".interests-underline"), 0.33, {ease: Power2.easeOut, x: '+=300', alpha:0})
+	.to($(".interests-underline"), 0.3, {ease: Power2.easeOut, x: '0', alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".interests-container",	
+
+  })
+		.setTween(interests_underline)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  interests_underline.delay( .1 );
+interests_underline.duration( 1.5 );
+}
+
+
 });
