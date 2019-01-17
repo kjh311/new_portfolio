@@ -154,5 +154,18 @@ $(".view-my-work").mouseleave(function(){
 });
 
 
+   // Change Z-index of Interests links
+ $(".interest-art").mouseover(function(){
+	$(".interests-img-art").addClass('hidden');
+		$(".learn-more-button-art").removeClass("learn-more-deactive").addClass("learn-more-active");
+		$(".interests-title-art").removeClass("interests-title-deactive").addClass("interests-title-active");
+});
+   $(".interest-art").mouseleave(function(){
+	$(".interests-img-art").removeClass('hidden');
+		$(".learn-more-button-art").removeClass("learn-more-active").addClass("learn-more-deactive");
+		$(".interests-title-art").removeClass("interests-title-active").addClass("interests-title-deactive");
+});
+
+
 
 });

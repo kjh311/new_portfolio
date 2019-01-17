@@ -10679,7 +10679,59 @@ div {
     margin: 0px 20px 0px 20px;
     padding-bottom: 100px; }
     .interests-container .interests .interest {
-      height: 300px; }
+      height: auto;
+      position: relative; }
+    .interests-container .interests .interests-img {
+      z-index: 1;
+      position: relative;
+      transition: 0.4s;
+      margin: 10px 0px 10px 0px;
+      width: 100%;
+      height: auto;
+      user-select: none; }
+    .interests-container .interests .learn-more-button {
+      z-index: 10;
+      position: absolute;
+      padding: 5px;
+      border: 2px solid #04C2C9;
+      top: 60%;
+      width: 200px;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-decoration: none;
+      color: #04C2C9; }
+    .interests-container .interests .learn-more-button:hover {
+      background-color: #04C2C9;
+      color: white; }
+    .interests-container .interests .learn-more-active {
+      opacity: 1;
+      user-select: auto;
+      transition: .5s; }
+    .interests-container .interests .learn-more-deactive {
+      opacity: 0;
+      user-select: none;
+      transition: .5s;
+      margin-top: 40px; }
+    .interests-container .interests .interests-title {
+      z-index: 10;
+      position: absolute;
+      top: 20%;
+      right: 0;
+      left: 0;
+      color: #2b3349;
+      margin-left: auto;
+      margin-right: auto; }
+    .interests-container .interests .interests-title-active {
+      opacity: 1;
+      user-select: auto;
+      transition: .5s; }
+    .interests-container .interests .interests-title-deactive {
+      opacity: 0;
+      user-select: none;
+      transition: .5s;
+      margin-top: -40px; }
 
 .contact-container {
   background: #2b3349;
@@ -10750,7 +10802,8 @@ footer {
       background-color: white;
       transition: 0.4s; }
   .lightbox .carousel-item {
-    border-bottom: 4px solid black; }
+    border-bottom: 4px solid black;
+    background-color: black; }
   .lightbox .carousel-control, .lightbox .carousel-control-prev, .lightbox .carousel-control-prev {
     width: 75px;
     height: 75px;
@@ -10760,5 +10813,9 @@ footer {
   .lightbox .carousel-control-icon {
     width: 30px;
     height: 30px; }
+  .lightbox .art-pic {
+    max-height: 500px;
+    height: auto;
+    width: auto; }
 
 /*# sourceMappingURL=style.css.map */
