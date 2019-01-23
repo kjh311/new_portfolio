@@ -166,6 +166,17 @@ $(".view-my-work").mouseleave(function(){
 		$(".interests-title-art").removeClass("interests-title-active").addClass("interests-title-deactive");
 });
 
+    $(".interest-animation").mouseover(function(){
+	$(".interests-img-animation").addClass('hidden');
+		$(".learn-more-button-animation").removeClass("learn-more-deactive").addClass("learn-more-active");
+		$(".interests-title-animation").removeClass("interests-title-deactive").addClass("interests-title-active");
+});
+   $(".interest-animation").mouseleave(function(){
+	$(".interests-img-animation").removeClass('hidden');
+		$(".learn-more-button-animation").removeClass("learn-more-active").addClass("learn-more-deactive");
+		$(".interests-title-animation").removeClass("interests-title-active").addClass("interests-title-deactive");
+});
+
 
 
 });
