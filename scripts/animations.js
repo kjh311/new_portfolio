@@ -363,7 +363,7 @@ technologies.duration( 1.5 );
 }
 
 
-// projects
+// project each
 if ($(window).width() > 767) {
 	var projects = new TimelineMax();
 
@@ -425,6 +425,30 @@ if ($(window).width() > 767) {
   ;
   interests_underline.delay( .1 );
 interests_underline.duration( 1.5 );
+}
+
+// interest each
+if ($(window).width() > 767) {
+	var interests = new TimelineMax();
+
+	interests.from($(".interest"), 0.33, {alpha:0})
+	.to($(".interest"), 0.3, {alpha:1});
+
+	// 	interests.call(function() {
+ //    //addClass, toggleClass, or your custom logic.  
+ //    	$('.interests-li').addClass("tracking-in-expand-fwd");
+	// }, null, null, 2);
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".interests-underline",	
+
+  })
+		.setTween(interests)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  interests.delay( .1 );
+interests.duration( 1.5 );
 }
 
 
