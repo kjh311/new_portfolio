@@ -177,6 +177,17 @@ $(".view-my-work").mouseleave(function(){
 		$(".interests-title-animation").removeClass("interests-title-active").addClass("interests-title-deactive");
 });
 
+    $(".interest-travel").mouseover(function(){
+	$(".interests-img-travel").addClass('hidden');
+		$(".learn-more-button-travel").removeClass("learn-more-deactive").addClass("learn-more-active");
+		$(".interests-title-travel").removeClass("interests-title-deactive").addClass("interests-title-active");
+});
+   $(".interest-travel").mouseleave(function(){
+	$(".interests-img-travel").removeClass('hidden');
+		$(".learn-more-button-travel").removeClass("learn-more-active").addClass("learn-more-deactive");
+		$(".interests-title-travel").removeClass("interests-title-active").addClass("interests-title-deactive");
+});
+
 
 
 });
