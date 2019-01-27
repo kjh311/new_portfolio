@@ -451,5 +451,44 @@ if ($(window).width() > 767) {
 interests.duration( 1.5 );
 }
 
+// CONTACT
+if ($(window).width() > 767) {
+  	var contact = new TimelineMax();
+
+	contact.from($(".contact-header"), 0.33, {ease: Power0.easeNone, x: '-=70px', alpha:0})
+	.to($(".contact-header"), 0.1, {ease: Power0.easeNone, x: '0', alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".contact-container",	
+
+  })
+		.setTween(contact)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+contact.duration( 0.3 );
+}
+
+
+
+// Contact Underline timeline
+if ($(window).width() > 767) {
+	var contact_underline = new TimelineMax();
+
+	contact_underline.from($(".contact-underline"), 0.33, {ease: Power2.easeOut, x: '+=300', alpha:0})
+	.to($(".contact-underline"), 0.3, {ease: Power2.easeOut, x: '0', alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".contact-container",	
+
+  })
+		.setTween(contact_underline)
+		.addTo(controller)
+   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+  ;
+  contact_underline.delay( .1 );
+contact_underline.duration( 1.5 );
+}
+
 
 });
