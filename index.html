@@ -26,7 +26,7 @@
     <!-- <link href="node_modules/lity/dist/lity.css" rel="stylesheet"> -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
 
 <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark">
@@ -36,19 +36,19 @@
         </button>
         <div class="collapse navbar-collapse   justify-content-end" id="navbarText">
             <ul class="navbar-nav ">
-                <li class="nav-item active  nav-about d-flex justify-content-end">
-                    <a class="nav-link   hvr-underline-from-center " href="#about">ABOUT <span class="sr-only">(current)</span></a>
+                <li class="nav-item nav-item-about   nav-about d-flex justify-content-end">
+                    <a class="nav-link  active hvr-underline-from-center " href="#about">ABOUT <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item  nav-projects  d-flex justify-content-end">
+                <li class="nav-item nav-item-projects  nav-projects  d-flex justify-content-end">
                     <a class="nav-link hvr-underline-from-center   " href="#projects">PROJECTS</a>
                 </li>
-                <li class="nav-item  nav-interests  d-flex justify-content-end">
+                <li class="nav-item nav-item-interests  nav-interests  d-flex justify-content-end">
                     <a class="nav-link hvr-underline-from-center   " href="#interests">INTERESTS</a>
                 </li>
-                <!--  <li class="nav-item   d-flex justify-content-end">
+                <!--  <li class="nav-item nav-item-about   d-flex justify-content-end">
 		        <a class="nav-link hvr-underline-from-center   " href="#">Education</a>
 		      </li> -->
-                <li class="nav-item  nav-contact  d-flex justify-content-end">
+                <li class="nav-item nav-item-contact  nav-contact  d-flex justify-content-end">
                     <a class="nav-link hvr-underline-from-center   " href="#contact">CONTACT</a>
                 </li>
             </ul>
@@ -80,7 +80,7 @@
 
 <!-- ABOUT CONTAINER -->
     <a name="about"></a>
-    <div class="container-fluid about-container ">
+    <div id="about" class="container-fluid about-container ">
         <!-- <div class="about-header d-flex justify-content-center"> -->
             <div class="about-header-text text-center ">ABOUT</div>
         <!-- </br> -->
@@ -200,7 +200,7 @@
 
 <!-- PROJECTS CONTAINER -->
     <a name="projects"></a>
-    <div class="container-fluid projects-container">
+    <div id="projects" class="container-fluid projects-container">
             <div class="projects-header-text text-center ">PROJECTS</div>
             <div class="projects-underline underline"></div>
 
@@ -378,7 +378,7 @@
 
 <!-- INTERESTS CONTAINER -->
     <a name="interests"></a>
-    <div class="container-fluid interests-container">
+    <div id="interests" class="container-fluid interests-container">
         <div class="interests-header d-flex justify-content-center align-items-center">
             ADDITIONAL<br class="d-block d-sm-none"> INTERESTS
         </div>
@@ -567,7 +567,7 @@
 
 <!-- CONTACT CONTAINER -->
         <a name="contact"></a>
-        <div class="container-fluid contact-container">
+        <div id="contact" class="container-fluid contact-container">
             <div class="contact-header d-flex justify-content-center align-items-center">
                 CONTACT
             </div>

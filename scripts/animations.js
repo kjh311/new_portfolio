@@ -9,6 +9,37 @@ var controller = new ScrollMagic.Controller({
    }); 
 
 
+// ACTIVE LINKS
+// new ScrollMagic.Scene({triggerElement: ".about-container"})
+// 	.setClassToggle(".nav-item-about", "active")
+// 	.addTo(controller);
+// new ScrollMagic.Scene({triggerElement: ".projects-container"})
+// 	.setClassToggle(".nav-item-projects", "active")
+// 	.addTo(controller);
+// new ScrollMagic.Scene({triggerElement: ".interests-container"})
+// 	.setClassToggle(".nav-item-interests", "active")
+// 	.addTo(controller);
+// new ScrollMagic.Scene({triggerElement: ".contact-container"})
+// 	.setClassToggle(".nav-item-contact", "active")
+// 	.addTo(controller);
+
+
+	// 	var scrollPosition = $(document).scrollTop();
+	// 	$('.navbar a').each(function () {
+	// 		var currentLink = $(this);
+	// 		var refElement = $(currentLink.attr("href"));
+	// 		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+	// 			$('.navbar ul li a').removeClass("active");
+	// 			currentLink.addClass("active");
+	// 		}
+	// 		else{
+	// 			currentLink.removeClass("active");
+	// 		}
+	// 	});
+	// }
+
+
+
 // About timeline
 if ($(window).width() > 767) {
   	var about = new TimelineMax();
@@ -290,7 +321,6 @@ node_wrapper.duration( 3 );
   ;
   photoshop_wrapper.delay( .3 );
 photoshop_wrapper.duration( 3 );
-
 
 
 // PROJECTS
@@ -601,14 +631,14 @@ if ($(window).width() > 767) {
 	.to($(".fa-envelope-square"), 0.3, {  alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".resume",	
+    triggerElement: ".phone",	
 
   })
 		.setTween(email)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  email.delay( .1 );
+  email.delay( .3 );
 email.duration( .5 );
 }
 
@@ -620,14 +650,14 @@ if ($(window).width() > 767) {
 	.to($(".fa-linkedin"), 0.3, { alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".resume",	
+    triggerElement: ".phone",	
 
   })
 		.setTween(linkedin)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  linkedin.delay( .3 );
+  linkedin.delay( .5 );
 linkedin.duration( .5 );
 }
 
@@ -639,14 +669,14 @@ if ($(window).width() > 767) {
 	.to($(".fa-github-square"), 0.3, { alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".resume",	
+    triggerElement: ".phone",	
 
   })
 		.setTween(gitub)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  gitub.delay( .5 );
+  gitub.delay( .7 );
 gitub.duration( .5 );
 }
 

@@ -17,6 +17,13 @@ TO DO:
 * fix sputtering nav grow and shrink
 * animate dropdown nav links
 
+ACTIVE LINK CLASS ADD ON SCROLL
+http://scrollmagic.io/examples/basic/class_toggles.html
+(doesn't work)
+
+ACTIVE LINK CHANGE WITH BOOTSTRAP
+https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
+
 Animated Bar Charts
 https://tympanus.net/Tutorials/Animated3DBarChart/38th Annual Spirit of San Pedro Holiday Parade
 

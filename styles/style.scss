@@ -57,6 +57,12 @@ $nav-bottom: #04C2C9;
     margin: 0;
 }
 
+.active{
+	-webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
 html {
     scroll-behavior: smooth;
 
