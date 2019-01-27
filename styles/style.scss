@@ -95,7 +95,7 @@ div {
     overflow: hidden;
     top: 0;
     // background-color: #f1f1f1;
-    padding: 20px 10px;
+    padding: 5px 10px;
     /* Large padding which will shrink on scroll (using JS) */
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -133,7 +133,7 @@ div {
     // transition: 0.4s;
     // }
     .navbar-brand {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: bold;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
@@ -151,8 +151,8 @@ div {
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
-        width: 70px;
-        height: 55px;
+        width: 66px;
+        height: 40px;
     }
 
     .navbar-toggler-icon {
@@ -160,7 +160,7 @@ div {
         -o-transition: 0.4s;
         transition: 0.4s;
         width: 40px;
-        height: 40px;
+        height: 30px;
     }
 
     .nav-link {

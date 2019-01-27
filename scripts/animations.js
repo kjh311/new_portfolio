@@ -1,12 +1,12 @@
 $( document ).ready(function() {
-    // alert( "ready!" );
+
 
 
 
 var controller = new ScrollMagic.Controller({
     triggerHook: "onLeave"
-        //reverse: false // see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#constructor
-   }); // Main scrollmagic controller for project
+        
+   }); 
 
 
 // About timeline
@@ -17,12 +17,6 @@ if ($(window).width() > 767) {
 	.to($(".about-header-text"), 0.1, {ease: Power0.easeNone, x: '0', alpha:1});
 
 
-// ADD CLASS
-	// about.call(function() {
- //    //addClass, toggleClass, or your custom logic.  
- //    	$('.about-header-text').addClass("text-pop-up-top");
-	// }, null, null, 2);
-
 	//  scene
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".about-container",	
@@ -30,7 +24,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(about)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
 about.duration( 0.3 );
 }
@@ -51,7 +45,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(about_underline)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   about_underline.delay( .1 );
 about_underline.duration( 1.5 );
@@ -72,7 +66,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(fast_trait)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   fast_trait.delay( 0 );
   fast_trait.duration( 2 );
@@ -93,7 +87,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(responsive_trait)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   responsive_trait.delay( 0.05 );
 responsive_trait.duration( 2 );
@@ -114,7 +108,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(intuitive_trait)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   intuitive_trait.delay( 0.1 );
 intuitive_trait.duration( 2 );
@@ -135,7 +129,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(dynamic_trait)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
 	dynamic_trait.delay( 0.15 );
 	dynamic_trait.duration( 2 );
@@ -156,7 +150,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(pic_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   pic_wrapper.delay( 0 );
   pic_wrapper.duration( 2 );
@@ -177,7 +171,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(strengths_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   strengths_wrapper.delay( 0 );
   strengths_wrapper.duration( 2 );
@@ -197,7 +191,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(html_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   html_wrapper.delay( .2 );
 html_wrapper.duration( 3 );
@@ -254,7 +248,7 @@ javascript_wrapper.duration( 3 );
   })
 		.setTween(angular_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.angular#reverse
+   scene.reverse(false)  
   ;
   angular_wrapper.delay( .26 );
 angular_wrapper.duration( 3 );
@@ -273,7 +267,7 @@ angular_wrapper.duration( 3 );
   })
 		.setTween(node_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.node#reverse
+   scene.reverse(false) 
   ;
   node_wrapper.delay( .28 );
 node_wrapper.duration( 3 );
@@ -292,7 +286,7 @@ node_wrapper.duration( 3 );
   })
 		.setTween(photoshop_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.photoshop#reverse
+   scene.reverse(false)  
   ;
   photoshop_wrapper.delay( .3 );
 photoshop_wrapper.duration( 3 );
@@ -312,7 +306,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(projects)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
 projects.duration( 0.3 );
 }
@@ -332,7 +326,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(projects_underline)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   projects_underline.delay( .1 );
 projects_underline.duration( 1.5 );
@@ -345,46 +339,77 @@ if ($(window).width() > 767) {
 	technologies.from($(".technologies-li"), 0.33, {alpha:0})
 	.to($(".technologies-li"), 0.3, {alpha:1});
 
-	// 	technologies.call(function() {
- //    //addClass, toggleClass, or your custom logic.  
- //    	$('.technologies-li').addClass("tracking-in-expand-fwd");
-	// }, null, null, 2);
-
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".projects-container",	
 
   })
 		.setTween(technologies)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   technologies.delay( .1 );
 technologies.duration( 1.5 );
 }
 
 
-// project each
+// BROOKS PROJECT
 if ($(window).width() > 767) {
-	var projects = new TimelineMax();
+	var brooks = new TimelineMax();
 
-	projects.from($(".project"), 0.33, {alpha:0})
-	.to($(".project"), 0.3, {alpha:1});
+	brooks.from($(".project-brooks"), 0.33, {alpha:0})
+	.to($(".project-brooks"), 0.3, {alpha:1});
 
-	// 	projects.call(function() {
- //    //addClass, toggleClass, or your custom logic.  
- //    	$('.projects-li').addClass("tracking-in-expand-fwd");
-	// }, null, null, 2);
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".projects-header-text",	
+    triggerElement: ".projects",	
 
   })
-		.setTween(projects)
+		.setTween(brooks)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
-  projects.delay( .1 );
-projects.duration( 1.5 );
+  brooks.delay( .1 );
+brooks.duration( 1.5 );
+}
+
+// MOVIE PROJECT
+if ($(window).width() > 767) {
+	var movie = new TimelineMax();
+
+	movie.from($(".project-movie"), 0.33, {alpha:0})
+	.to($(".project-movie"), 0.3, {alpha:1});
+
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects",	
+
+  })
+		.setTween(movie)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  movie.delay( .15 );
+movie.duration( 1.5 );
+}
+
+// THRONES PROJECT
+if ($(window).width() > 767) {
+	var thrones = new TimelineMax();
+
+	thrones.from($(".project-thrones"), 0.33, {alpha:0})
+	.to($(".project-thrones"), 0.3, {alpha:1});
+
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects",	
+
+  })
+		.setTween(thrones)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  thrones.delay( .2 );
+thrones.duration( 1.5 );
 }
 
 
@@ -401,7 +426,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(interests)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
 interests.duration( 0.3 );
 }
@@ -421,34 +446,67 @@ if ($(window).width() > 767) {
   })
 		.setTween(interests_underline)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   interests_underline.delay( .1 );
 interests_underline.duration( 1.5 );
 }
 
-// interest each
+// interest art
 if ($(window).width() > 767) {
-	var interests = new TimelineMax();
+	var art = new TimelineMax();
 
-	interests.from($(".interest"), 0.33, {alpha:0})
-	.to($(".interest"), 0.3, {alpha:1});
-
-	// 	interests.call(function() {
- //    //addClass, toggleClass, or your custom logic.  
- //    	$('.interests-li').addClass("tracking-in-expand-fwd");
-	// }, null, null, 2);
+	art.from($(".interest-art"), 0.33, {alpha:0})
+	.to($(".interest-art"), 0.3, {alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".interests-underline",	
+    triggerElement: ".interests",	
 
   })
-		.setTween(interests)
+		.setTween(art)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
-  interests.delay( .1 );
-interests.duration( 1.5 );
+  art.delay( .1 );
+art.duration( 1.5 );
+}
+
+// interest Animation
+if ($(window).width() > 767) {
+	var animation = new TimelineMax();
+
+	animation.from($(".interest-animation"), 0.33, {alpha:0})
+	.to($(".interest-animation"), 0.3, {alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".interests",	
+
+  })
+		.setTween(animation)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  animation.delay( .15 );
+animation.duration( 1.5 );
+}
+
+// interest TRAVEL
+if ($(window).width() > 767) {
+	var travel = new TimelineMax();
+
+	travel.from($(".interest-travel"), 0.33, {alpha:0})
+	.to($(".interest-travel"), 0.3, {alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".interests",	
+
+  })
+		.setTween(travel)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  travel.delay( .2 );
+travel.duration( 1.5 );
 }
 
 // CONTACT
@@ -464,7 +522,7 @@ if ($(window).width() > 767) {
   })
 		.setTween(contact)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
 contact.duration( 0.3 );
 }
@@ -484,10 +542,112 @@ if ($(window).width() > 767) {
   })
 		.setTween(contact_underline)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.html#reverse
+   scene.reverse(false)  
   ;
   contact_underline.delay( .1 );
 contact_underline.duration( 1.5 );
+}
+
+
+// Phone
+if ($(window).width() > 767) {
+	var phone = new TimelineMax();
+
+	phone.from($(".phone"), 0.33, {alpha:0})
+	.to($(".phone"), 0.3, {alpha:1});
+
+	// 	phone.call(function() {
+ //    //addClass, toggleClass, or your custom logic.  
+ //    	$('.phone-li').addClass("tracking-in-expand-fwd");
+	// }, null, null, 2);
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".contact-underline",	
+
+  })
+		.setTween(phone)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  phone.delay( .1 );
+phone.duration( 1.5 );
+}
+
+// RESUME
+if ($(window).width() > 767) {
+	var resume = new TimelineMax();
+
+	resume.from($(".resume"), 0.33, {alpha:0})
+	.to($(".resume"), 0.3, {alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".phone",	
+
+  })
+		.setTween(resume)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  resume.delay( .1 );
+resume.duration( 1.5 );
+}
+
+
+// EMAIL ICON
+if ($(window).width() > 767) {
+	var email = new TimelineMax();
+
+	email.from($(".fa-envelope-square"), 0.33, { alpha:0 })
+	.to($(".fa-envelope-square"), 0.3, {  alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".resume",	
+
+  })
+		.setTween(email)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  email.delay( .1 );
+email.duration( .5 );
+}
+
+// LINKEDIN ICON
+if ($(window).width() > 767) {
+	var linkedin = new TimelineMax();
+
+	linkedin.from($(".fa-linkedin"), 0.33, { alpha:0})
+	.to($(".fa-linkedin"), 0.3, { alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".resume",	
+
+  })
+		.setTween(linkedin)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  linkedin.delay( .3 );
+linkedin.duration( .5 );
+}
+
+// GITHUB ICON
+if ($(window).width() > 767) {
+	var gitub = new TimelineMax();
+
+	gitub.from($(".fa-github-square"), 0.33, {  alpha:0})
+	.to($(".fa-github-square"), 0.3, { alpha:1});
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".resume",	
+
+  })
+		.setTween(gitub)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  gitub.delay( .5 );
+gitub.duration( .5 );
 }
 
 

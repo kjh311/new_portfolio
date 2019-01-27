@@ -10559,7 +10559,7 @@ div {
 .navbar {
   overflow: hidden;
   top: 0;
-  padding: 20px 10px;
+  padding: 5px 10px;
   /* Large padding which will shrink on scroll (using JS) */
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -10577,7 +10577,7 @@ div {
     border-radius: 4px;
     font-weight: 100; }
   .navbar .navbar-brand {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -10587,14 +10587,14 @@ div {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    width: 70px;
-    height: 55px; }
+    width: 66px;
+    height: 40px; }
   .navbar .navbar-toggler-icon {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
     width: 40px;
-    height: 40px; }
+    height: 30px; }
   .navbar .nav-link {
     margin: 0px 20px 0px 20px; }
 
