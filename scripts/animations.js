@@ -9,37 +9,6 @@ var controller = new ScrollMagic.Controller({
    }); 
 
 
-// ACTIVE LINKS
-// new ScrollMagic.Scene({triggerElement: ".about-container"})
-// 	.setClassToggle(".nav-item-about", "active")
-// 	.addTo(controller);
-// new ScrollMagic.Scene({triggerElement: ".projects-container"})
-// 	.setClassToggle(".nav-item-projects", "active")
-// 	.addTo(controller);
-// new ScrollMagic.Scene({triggerElement: ".interests-container"})
-// 	.setClassToggle(".nav-item-interests", "active")
-// 	.addTo(controller);
-// new ScrollMagic.Scene({triggerElement: ".contact-container"})
-// 	.setClassToggle(".nav-item-contact", "active")
-// 	.addTo(controller);
-
-
-	// 	var scrollPosition = $(document).scrollTop();
-	// 	$('.navbar a').each(function () {
-	// 		var currentLink = $(this);
-	// 		var refElement = $(currentLink.attr("href"));
-	// 		if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-	// 			$('.navbar ul li a').removeClass("active");
-	// 			currentLink.addClass("active");
-	// 		}
-	// 		else{
-	// 			currentLink.removeClass("active");
-	// 		}
-	// 	});
-	// }
-
-
-
 // About timeline
 if ($(window).width() > 767) {
   	var about = new TimelineMax();
@@ -224,7 +193,7 @@ if ($(window).width() > 767) {
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  html_wrapper.delay( .2 );
+  html_wrapper.delay( .15 );
 html_wrapper.duration( 3 );
 
 
@@ -241,9 +210,9 @@ html_wrapper.duration( 3 );
   })
 		.setTween(css_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.css#reverse
+   scene.reverse(false)  
   ;
-  css_wrapper.delay( .22 );
+  css_wrapper.delay( .17 );
 css_wrapper.duration( 3 );
 
 
@@ -260,9 +229,9 @@ css_wrapper.duration( 3 );
   })
 		.setTween(javascript_wrapper)
 		.addTo(controller)
-   scene.reverse(false)  //only in this scene - see: http://scrollmagic.io/docs/ScrollMagic.Scene.javascript#reverse
+   scene.reverse(false)  
   ;
-  javascript_wrapper.delay( .24 );
+  javascript_wrapper.delay( .19 );
 javascript_wrapper.duration( 3 );
 
 
@@ -281,7 +250,7 @@ javascript_wrapper.duration( 3 );
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  angular_wrapper.delay( .26 );
+  angular_wrapper.delay( .21 );
 angular_wrapper.duration( 3 );
 
 
@@ -300,7 +269,7 @@ angular_wrapper.duration( 3 );
 		.addTo(controller)
    scene.reverse(false) 
   ;
-  node_wrapper.delay( .28 );
+  node_wrapper.delay( .23 );
 node_wrapper.duration( 3 );
 
 
@@ -319,7 +288,7 @@ node_wrapper.duration( 3 );
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  photoshop_wrapper.delay( .3 );
+  photoshop_wrapper.delay( .25 );
 photoshop_wrapper.duration( 3 );
 
 
@@ -391,14 +360,14 @@ if ($(window).width() > 767) {
 
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".projects",	
+    triggerElement: ".projects-container",	
 
   })
 		.setTween(brooks)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  brooks.delay( .1 );
+  brooks.delay( .3 );
 brooks.duration( 1.5 );
 }
 
@@ -411,14 +380,14 @@ if ($(window).width() > 767) {
 
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".projects",	
+    triggerElement: ".projects-container",	
 
   })
 		.setTween(movie)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  movie.delay( .15 );
+  movie.delay( .35 );
 movie.duration( 1.5 );
 }
 
@@ -431,14 +400,14 @@ if ($(window).width() > 767) {
 
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".projects",	
+    triggerElement: ".projects-container",	
 
   })
 		.setTween(thrones)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  thrones.delay( .2 );
+  thrones.delay( .4 );
 thrones.duration( 1.5 );
 }
 
@@ -490,14 +459,14 @@ if ($(window).width() > 767) {
 	.to($(".interest-art"), 0.3, {alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".interests",	
+    triggerElement: ".interests-container",	
 
   })
 		.setTween(art)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  art.delay( .1 );
+  art.delay( .25 );
 art.duration( 1.5 );
 }
 
@@ -509,14 +478,14 @@ if ($(window).width() > 767) {
 	.to($(".interest-animation"), 0.3, {alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".interests",	
+    triggerElement: ".interests-container",	
 
   })
 		.setTween(animation)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  animation.delay( .15 );
+  animation.delay( .3 );
 animation.duration( 1.5 );
 }
 
@@ -528,14 +497,14 @@ if ($(window).width() > 767) {
 	.to($(".interest-travel"), 0.3, {alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".interests",	
+    triggerElement: ".interests-container",	
 
   })
 		.setTween(travel)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  travel.delay( .2 );
+  travel.delay( .35 );
 travel.duration( 1.5 );
 }
 
@@ -586,20 +555,15 @@ if ($(window).width() > 767) {
 	phone.from($(".phone"), 0.33, {alpha:0})
 	.to($(".phone"), 0.3, {alpha:1});
 
-	// 	phone.call(function() {
- //    //addClass, toggleClass, or your custom logic.  
- //    	$('.phone-li').addClass("tracking-in-expand-fwd");
-	// }, null, null, 2);
-
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".contact-underline",	
+    triggerElement: ".contact-container",	
 
   })
 		.setTween(phone)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  phone.delay( .1 );
+  phone.delay( .25 );
 phone.duration( 1.5 );
 }
 
@@ -611,14 +575,14 @@ if ($(window).width() > 767) {
 	.to($(".resume"), 0.3, {alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".phone",	
+    triggerElement: ".contact-container",	
 
   })
 		.setTween(resume)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  resume.delay( .1 );
+  resume.delay( .3 );
 resume.duration( 1.5 );
 }
 
@@ -631,14 +595,14 @@ if ($(window).width() > 767) {
 	.to($(".fa-envelope-square"), 0.3, {  alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".phone",	
+    triggerElement: ".contact-container",	
 
   })
 		.setTween(email)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  email.delay( .3 );
+  email.delay( 1 );
 email.duration( .5 );
 }
 
@@ -650,14 +614,14 @@ if ($(window).width() > 767) {
 	.to($(".fa-linkedin"), 0.3, { alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".phone",	
+    triggerElement: ".contact-container",	
 
   })
 		.setTween(linkedin)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  linkedin.delay( .5 );
+  linkedin.delay( 1.2 );
 linkedin.duration( .5 );
 }
 
@@ -669,14 +633,14 @@ if ($(window).width() > 767) {
 	.to($(".fa-github-square"), 0.3, { alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".phone",	
+    triggerElement: ".contact-container",	
 
   })
 		.setTween(gitub)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  gitub.delay( .7 );
+  gitub.delay( 1.4 );
 gitub.duration( .5 );
 }
 

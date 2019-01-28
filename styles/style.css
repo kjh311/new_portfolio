@@ -10676,7 +10676,6 @@ div {
     font-size: 30px;
     margin-top: 70px;
     padding: 10px 0px;
-    opacity: 0;
     -webkit-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out; }
@@ -10931,7 +10930,7 @@ div {
     left: 0;
     right: 0; }
   .interests-container .interests {
-    margin: 70px 20px 0px 20px;
+    margin: 70px 5% 0px 5%;
     padding-bottom: 100px; }
     .interests-container .interests .interest {
       height: auto;
@@ -11039,7 +11038,7 @@ div {
     left: 0;
     right: 0; }
   .contact-container .phone {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 50px 0px 20px 0px; }
   .contact-container .fa-phone-square {
     margin: 0px 10px 0px 10px; }
@@ -11103,7 +11102,7 @@ div {
 
 footer {
   color: white;
-  height: 100px;
+  height: 70px;
   background: #1e3e63; }
 
 .lightbox {
@@ -11114,6 +11113,8 @@ footer {
   overflow-y: scroll;
   position: relative;
   background-color: #fff; }
+  .lightbox .carousel {
+    background-color: black; }
   .lightbox .sub-content {
     margin: 20px; }
     .lightbox .sub-content .sub-content-header {

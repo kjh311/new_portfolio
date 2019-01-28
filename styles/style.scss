@@ -297,7 +297,7 @@ div {
         font-size: 30px;
         margin-top: 70px;
         padding: 10px 0px;
-        opacity: 0;
+        // opacity: 0;
         // transform: translateX(-50px);
         -webkit-transition: all 0.4s ease-out;
         -o-transition: all 0.4s ease-out;
@@ -738,7 +738,7 @@ div {
 
     .interests {
         // @extend %color-border;
-        margin: 70px 20px 0px 20px;
+        margin: 70px 5% 0px 5%;
         padding-bottom: 100px;
 
         .interest {
@@ -893,7 +893,7 @@ div {
     }
 
     .phone{
-    	font-size: 2em;
+    	font-size: 1.5em;
     	margin: 50px 0px 20px 0px;
     }
     .fa-phone-square{
@@ -920,6 +920,7 @@ div {
             transition: 0.4s;
             transform: scale(1);
             // text-decoration: none;
+            // box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     }
     .resume-link:hover{
     	-webkit-transition: 0.4s;
@@ -928,6 +929,7 @@ div {
             transform: scale(1.1);
             color: $nav-bottom;
             background-color: #fff;
+            // box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
     }
     .fa-file{
     	margin: 0px 10px 0px 10px;
@@ -949,6 +951,7 @@ div {
             -o-transition: 0.4s;
             transition: 0.4s;
             transform: scale(1);
+            // box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
             }
             .fa-icon:hover{
             	font-size: 4em;
@@ -958,6 +961,7 @@ div {
             -o-transition: 0.4s;
             transition: 0.4s;
             transform: scale(1.3);
+            // box-shadow: 15px 10px 10px rgba(0,0,0,0.5);
             }
         }
     }
@@ -978,7 +982,7 @@ div {
 footer {
     // @extend %color-border;
     color: white;
-    height: 100px;
+    height: 70px;
     background: $footer;
     .copywrite{
     	// margin: -120px 0px 0px 0px;
@@ -1000,6 +1004,10 @@ footer {
     // top: 0;
     position: relative;
     background-color: #fff;
+    
+    .carousel{
+    	background-color: black;
+    }
 
     .sub-content {
         margin: 20px;
