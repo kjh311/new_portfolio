@@ -599,6 +599,7 @@ div {
     .project-title {
         z-index: 10;
         position: absolute;
+        font-size: 1.2em;
         top: 20%;
         right: 0;
         left: 0;
@@ -631,6 +632,7 @@ div {
 
     .red-text {
         color: $nav-bottom;
+        font-size: .9em;
     }
 
     .learn-more-button {
@@ -638,7 +640,7 @@ div {
         position: absolute;
         padding: 5px;
         border: 2px solid $nav-bottom;
-        top: 60%;
+        top: 70%;
         width: 200px;
         right: 0;
         left: 0;
@@ -768,7 +770,7 @@ div {
             position: absolute;
             padding: 5px;
             border: 2px solid $nav-bottom;
-            top: 60%;
+            top: 50%;
             width: 200px;
             right: 0;
             left: 0;
@@ -809,7 +811,8 @@ div {
         .interests-title {
             z-index: 10;
             position: absolute;
-            top: 20%;
+            top: 30%;
+            font-size: 1.2em;
             right: 0;
             left: 0;
             color: $dark-grey;
@@ -1004,7 +1007,7 @@ footer {
     // top: 0;
     position: relative;
     background-color: #fff;
-    
+
     .carousel{
     	background-color: black;
     }

@@ -157,8 +157,8 @@ if ($(window).width() > 767) {
 }
 
 
-// Strengths Wrapper timeline
-if ($(window).width() > 767) {
+// Strengths Wrapper timeline (DESKTOP)
+if ($(window).width() > 991) {
 	var strengths_wrapper = new TimelineMax();
 
 	strengths_wrapper.from($(".strengths-wrapper"), 0.33, {ease: Power3.easeOut, x: '+=600', alpha:0, scale: 0})
@@ -177,8 +177,29 @@ if ($(window).width() > 767) {
   strengths_wrapper.duration( 2 );
 }
 
+// Strengths Wrapper timeline (IPAD)
+if ($(window).width() > 767) {
+	var strengths_wrapper = new TimelineMax();
 
-// HTML bar
+	strengths_wrapper.from($(".strengths-wrapper"), 0.33, {ease: Power3.easeOut, x: '+=600', alpha:0, scale: 0})
+	.to($(".strengths-wrapper"), 0.3, {ease: Power0.easeNone, x: '0', alpha:1, scale: 1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(strengths_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  strengths_wrapper.delay( 0 );
+  strengths_wrapper.duration( 2 );
+}
+
+
+// HTML bar (DESKTOP)
+if ($(window).width() > 991) {
 	var html_wrapper = new TimelineMax();
 
 	html_wrapper.from($(".animated-bar-html"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -195,9 +216,31 @@ if ($(window).width() > 767) {
   ;
   html_wrapper.delay( .15 );
 html_wrapper.duration( 3 );
+}
+
+// HTML bar (IPAD & lower)
+// if ($(window).width() > 767) {
+	var html_wrapper = new TimelineMax();
+
+	html_wrapper.from($(".animated-bar-html"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-html"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(html_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  html_wrapper.delay( .15 );
+html_wrapper.duration( 3 );
+// }
 
 
-// CSS bar
+// CSS bar (DESKTOP)
+if ($(window).width() > 991) {
 	var css_wrapper = new TimelineMax();
 
 	css_wrapper.from($(".animated-bar-css"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -214,9 +257,31 @@ html_wrapper.duration( 3 );
   ;
   css_wrapper.delay( .17 );
 css_wrapper.duration( 3 );
+}
+
+// CSS bar (IPAD AND LOWER)
+// if ($(window).width() > 767) {
+	var css_wrapper = new TimelineMax();
+
+	css_wrapper.from($(".animated-bar-css"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-css"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(css_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  css_wrapper.delay( .17 );
+css_wrapper.duration( 3 );
+// }
 
 
-// Javascript bar
+// Javascript bar (DESKTOP)
+if ($(window).width() > 991) {
 	var javascript_wrapper = new TimelineMax();
 
 	javascript_wrapper.from($(".animated-bar-javascript"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -233,9 +298,31 @@ css_wrapper.duration( 3 );
   ;
   javascript_wrapper.delay( .19 );
 javascript_wrapper.duration( 3 );
+}
+
+// Javascript bar (IPAD AND LOWER)
+// if ($(window).width() > 767) {
+	var javascript_wrapper = new TimelineMax();
+
+	javascript_wrapper.from($(".animated-bar-javascript"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-javascript"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(javascript_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  javascript_wrapper.delay( .19 );
+javascript_wrapper.duration( 3 );
+// }
 
 
-// angular bar
+// angular bar (DESKTOP)
+if ($(window).width() > 991) {
 	var angular_wrapper = new TimelineMax();
 
 	angular_wrapper.from($(".animated-bar-angular"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -252,9 +339,31 @@ javascript_wrapper.duration( 3 );
   ;
   angular_wrapper.delay( .21 );
 angular_wrapper.duration( 3 );
+}
+
+// angular bar (IPAD AND LOWER)
+// if ($(window).width() > 767) {
+	var angular_wrapper = new TimelineMax();
+
+	angular_wrapper.from($(".animated-bar-angular"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-angular"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(angular_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  angular_wrapper.delay( .21 );
+angular_wrapper.duration( 3 );
+// }
 
 
-// node bar
+// node bar (DESKTOP)
+if ($(window).width() > 991) {
 	var node_wrapper = new TimelineMax();
 
 	node_wrapper.from($(".animated-bar-node"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -271,9 +380,31 @@ angular_wrapper.duration( 3 );
   ;
   node_wrapper.delay( .23 );
 node_wrapper.duration( 3 );
+}
+
+// node bar (IPAD AND LOWER)
+// if ($(window).width() > 767) {
+	var node_wrapper = new TimelineMax();
+
+	node_wrapper.from($(".animated-bar-node"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-node"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(node_wrapper)
+		.addTo(controller)
+   scene.reverse(false) 
+  ;
+  node_wrapper.delay( .23 );
+node_wrapper.duration( 3 );
+// }
 
 
-// photoshop bar
+// photoshop bar (DESKTOP)
+if ($(window).width() > 991) {
 	var photoshop_wrapper = new TimelineMax();
 
 	photoshop_wrapper.from($(".animated-bar-photoshop"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -290,6 +421,27 @@ node_wrapper.duration( 3 );
   ;
   photoshop_wrapper.delay( .25 );
 photoshop_wrapper.duration( 3 );
+}
+
+// photoshop bar (IPAD AND LOWER)
+// if ($(window).width() > 767) {
+	var photoshop_wrapper = new TimelineMax();
+
+	photoshop_wrapper.from($(".animated-bar-photoshop"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
+	.to($(".animated-bar-photoshop"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".passion-text",	
+
+  })
+		.setTween(photoshop_wrapper)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  photoshop_wrapper.delay( .25 );
+photoshop_wrapper.duration( 3 );
+// }
 
 
 // PROJECTS

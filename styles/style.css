@@ -10839,6 +10839,7 @@ div {
   .projects-container .project-title {
     z-index: 10;
     position: absolute;
+    font-size: 1.2em;
     top: 20%;
     right: 0;
     left: 0;
@@ -10864,13 +10865,14 @@ div {
     transition: .5s;
     margin-top: -40px; }
   .projects-container .red-text {
-    color: #04C2C9; }
+    color: #04C2C9;
+    font-size: .9em; }
   .projects-container .learn-more-button {
     z-index: 10;
     position: absolute;
     padding: 5px;
     border: 2px solid #04C2C9;
-    top: 60%;
+    top: 70%;
     width: 200px;
     right: 0;
     left: 0;
@@ -10953,7 +10955,7 @@ div {
       position: absolute;
       padding: 5px;
       border: 2px solid #04C2C9;
-      top: 60%;
+      top: 50%;
       width: 200px;
       right: 0;
       left: 0;
@@ -10986,7 +10988,8 @@ div {
     .interests-container .interests .interests-title {
       z-index: 10;
       position: absolute;
-      top: 20%;
+      top: 30%;
+      font-size: 1.2em;
       right: 0;
       left: 0;
       color: #2b3349;
