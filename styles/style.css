@@ -10694,7 +10694,10 @@ div {
     right: 0; }
   .about-container .traits {
     color: #6F6F6F;
-    margin: 100px 20px 0px 20px; }
+    margin: 50px 20px 0px 20px; }
+    @media (min-width: 576px) {
+      .about-container .traits {
+        margin-top: 100px; } }
     .about-container .traits .fast-traits,
     .about-container .traits .responsive-traits,
     .about-container .traits .intuitive-traits,
@@ -10707,7 +10710,10 @@ div {
       height: auto;
       width: 100%; }
       .about-container .traits .trait-header-div .trait-header-div-text {
-        font-size: 25px; }
+        font-size: 20px; }
+        @media (min-width: 576px) {
+          .about-container .traits .trait-header-div .trait-header-div-text {
+            font-size: 25px; } }
     .about-container .traits .trait-subheader-div {
       height: auto;
       width: 100%; }
@@ -10720,17 +10726,24 @@ div {
             font-size: 18px;
             line-height: 30px; } }
     .about-container .traits .trait .traits-icon {
-      width: 130px;
-      max-height: 130px;
+      width: 100px;
+      max-height: 100px;
       background-color: #04C2C9;
       border-radius: 50%;
       padding: 15px; }
+      @media (min-width: 576px) {
+        .about-container .traits .trait .traits-icon {
+          width: 130px;
+          max-height: 130px; } }
   .about-container .kev-pic {
     width: 50%;
     border-radius: 100%; }
   .about-container .passion-text {
-    max-width: 50%;
+    max-width: 70%;
     margin-top: 20px; }
+    @media (min-width: 576px) {
+      .about-container .passion-text {
+        max-width: 50%; } }
   .about-container .pic {
     height: auto;
     margin: 30px 0 30px 0; }
@@ -10745,11 +10758,14 @@ div {
       z-index: 8; }
       .about-container .strengths .strength .strength-text {
         background-color: #04C2C9;
-        width: 25%;
+        width: 35%;
         height: 100%;
         padding: 5px 0 5px 0;
         z-index: 11;
         color: white; }
+        @media (min-width: 576px) {
+          .about-container .strengths .strength .strength-text {
+            width: 25%; } }
       .about-container .strengths .strength .animated-bar {
         background-color: #1e3e63;
         position: absolute;
@@ -10839,12 +10855,17 @@ div {
   .projects-container .project-title {
     z-index: 10;
     position: absolute;
-    font-size: 1.2em;
+    font-size: 0.9em;
     top: 20%;
     right: 0;
     left: 0;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    line-height: 20px; }
+    @media (min-width: 576px) {
+      .projects-container .project-title {
+        font-size: 1.2em;
+        line-height: 25px; } }
   .projects-container .project-title-active {
     opacity: 1;
     -webkit-user-select: auto;
@@ -10872,7 +10893,7 @@ div {
     position: absolute;
     padding: 5px;
     border: 2px solid #04C2C9;
-    top: 70%;
+    top: 60%;
     width: 200px;
     right: 0;
     left: 0;
@@ -10912,6 +10933,7 @@ div {
   background: #fff;
   color: #1e3e63; }
   .interests-container .interests-header {
+    margin-top: 70px;
     color: #444649;
     font-size: 30px;
     padding: 10px 0px;
@@ -11020,6 +11042,7 @@ div {
   color: white;
   position: relative; }
   .contact-container .contact-header {
+    margin-top: 70px;
     color: #444649;
     font-size: 30px;
     padding: 10px 0px;
@@ -11078,7 +11101,10 @@ div {
     margin: 10px auto 10px auto; }
     .contact-container .icons-div .icon-wrapper {
       height: auto;
-      padding: 50px; }
+      padding: 10px; }
+      @media (min-width: 576px) {
+        .contact-container .icons-div .icon-wrapper {
+          padding: 50px; } }
       .contact-container .icons-div .icon-wrapper .fa-icon {
         font-size: 4em;
         color: #fff;
@@ -11121,14 +11147,25 @@ footer {
   .lightbox .sub-content {
     margin: 20px; }
     .lightbox .sub-content .sub-content-header {
+      font-size: 1em;
       color: #2b3349; }
+      @media (min-width: 576px) {
+        .lightbox .sub-content .sub-content-header {
+          font-size: 2em; } }
     .lightbox .sub-content .sub-content-sub-header {
-      color: #bcbaba; }
+      color: #bcbaba;
+      font-size: 0.8em; }
+      @media (min-width: 576px) {
+        .lightbox .sub-content .sub-content-sub-header {
+          font-size: 1.2em; } }
     .lightbox .sub-content .sub-content-about {
       color: #bcbaba;
       font-size: 0.8em;
       line-height: 25px;
       margin: 20px 0px; }
+      @media (min-width: 576px) {
+        .lightbox .sub-content .sub-content-about {
+          font-size: 0.8em; } }
     .lightbox .sub-content .line {
       width: 100%;
       height: 1px;
@@ -11144,12 +11181,15 @@ footer {
     .lightbox .sub-content .project-link {
       text-decoration: none;
       color: white;
-      padding: 5px 20px;
+      padding: 5px 5px;
       background-color: #04C2C9;
       border: 2px solid #04C2C9;
       -webkit-transition: 0.4s;
       -o-transition: 0.4s;
       transition: 0.4s; }
+      @media (min-width: 576px) {
+        .lightbox .sub-content .project-link {
+          padding: 5px 20px; } }
     .lightbox .sub-content .project-link:hover {
       color: #04C2C9;
       background-color: white;

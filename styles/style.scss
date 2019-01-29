@@ -330,17 +330,23 @@ div {
     }
 
     .traits {
+    	// margin-top: -250px;
+   color: $medium-text;
+        margin: 50px 20px 0px 20px;
+            @include media-breakpoint-up(sm) { 
+            	margin-top: 100px;
+			}
 
         .fast-traits,
         .responsive-traits,
         .intuitive-traits,
         .dynamic-traits {
             opacity: 0;
+            
         }
 
         // @extend %color-border;
-        color: $medium-text;
-        margin: 100px 20px 0px 20px;
+        
 
         .icon-div {
             height: 150px;
@@ -352,7 +358,10 @@ div {
             width: 100%;
 
             .trait-header-div-text {
-                font-size: 25px;
+                font-size: 20px;
+                @include media-breakpoint-up(sm) {
+                    font-size: 25px;
+                }
 
             }
         }
@@ -378,11 +387,15 @@ div {
             // @extend %color-border;
 
             .traits-icon {
-                width: 130px;
-                max-height: 130px;
+                width: 100px;
+                max-height: 100px;
                 background-color: $nav-bottom;
                 border-radius: 50%;
                 padding: 15px;
+                @include media-breakpoint-up(sm) {
+                   width: 130px;
+                max-height: 130px;
+                }
             }
 
             .responsive-icon {
@@ -399,9 +412,11 @@ div {
     }
 
     .passion-text {
-        max-width: 50%;
+        max-width: 70%;
         margin-top: 20px;
-        // line-height: 1000px;
+	        @include media-breakpoint-up(sm) { 
+	        	max-width: 50%;
+			}
     }
 
     .pic-strengths {
@@ -433,11 +448,14 @@ div {
 
             .strength-text {
                 background-color: $nav-bottom;
-                width: 25%;
+                width: 35%;
                 height: 100%;
                 padding: 5px 0 5px 0;
                 z-index: 11;
                 color: white;
+                @include media-breakpoint-up(sm) {
+			        width: 25%;
+			    }
             }
 
             .animated-bar {
@@ -599,12 +617,17 @@ div {
     .project-title {
         z-index: 10;
         position: absolute;
-        font-size: 1.2em;
+        font-size: 0.9em;
         top: 20%;
         right: 0;
         left: 0;
         margin-left: auto;
         margin-right: auto;
+        line-height: 20px;
+        	@include media-breakpoint-up(sm) { 
+        		font-size: 1.2em;
+        		line-height: 25px;
+			}
     }
 
     .project-title-active {
@@ -633,6 +656,11 @@ div {
     .red-text {
         color: $nav-bottom;
         font-size: .9em;
+        // line-height: 5px;
+	  //       @include media-breakpoint-up(sm) { 
+	  //       	font-size: .9em;
+	  //       	// line-height: 15px;
+			// }
     }
 
     .learn-more-button {
@@ -640,7 +668,7 @@ div {
         position: absolute;
         padding: 5px;
         border: 2px solid $nav-bottom;
-        top: 70%;
+        top: 60%;
         width: 200px;
         right: 0;
         left: 0;
@@ -708,8 +736,7 @@ div {
     color: $footer;
 
     .interests-header {
-        // @extend %color-border;
-        // height: 300px;
+        margin-top: 70px;
         color: $dark-text;
         font-size: 30px;
         // margin-top: 70px;
@@ -864,6 +891,7 @@ div {
     .contact-header {
          // @extend %color-border;
         // height: 300px;
+        margin-top: 70px;
         color: $dark-text;
         font-size: 30px;
         // margin-top: 70px;
@@ -946,7 +974,10 @@ div {
 
         .icon-wrapper {
             height: auto;
-            padding: 50px;
+            padding: 10px;
+            @include media-breakpoint-up(sm) { 
+            	padding: 50px;
+			}
             .fa-icon{
             	font-size: 4em;
             	color: #fff;
@@ -1016,11 +1047,19 @@ footer {
         margin: 20px;
 
         .sub-content-header {
+        	font-size: 1em;
             color: $dark-grey;
+            @include media-breakpoint-up(sm) {
+	            font-size: 2em;
+	        }
         }
 
         .sub-content-sub-header {
             color: $medium-grey;
+            font-size: 0.8em;
+            @include media-breakpoint-up(sm) {
+	            font-size: 1.2em;
+	        }
         }
 
         .sub-content-about {
@@ -1028,6 +1067,9 @@ footer {
             font-size: 0.8em;
             line-height: 25px;
             margin: 20px 0px;
+            @include media-breakpoint-up(sm) {
+	            font-size: 0.8em;
+	        }
         }
 
         .sub-content-ul {}
@@ -1056,12 +1098,15 @@ footer {
         .project-link {
             text-decoration: none;
             color: white;
-            padding: 5px 20px;
+            padding: 5px 5px;
             background-color: $nav-bottom;
             border: 2px solid $nav-bottom;
             -webkit-transition: 0.4s;
             -o-transition: 0.4s;
             transition: 0.4s;
+            @include media-breakpoint-up(sm) { 
+            	padding: 5px 20px;
+			}
         }
 
         .project-link:hover {
