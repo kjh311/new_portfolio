@@ -157,6 +157,8 @@ if ($(window).width() > 767) {
 }
 
 
+
+
 // Strengths Wrapper timeline (DESKTOP)
 if ($(window).width() > 991) {
 	var strengths_wrapper = new TimelineMax();
@@ -178,7 +180,7 @@ if ($(window).width() > 991) {
 }
 
 // Strengths Wrapper timeline (IPAD)
-if ($(window).width() > 767) {
+if ($(window).width() > 767 && $(window).width() < 991) {
 	var strengths_wrapper = new TimelineMax();
 
 	strengths_wrapper.from($(".strengths-wrapper"), 0.33, {ease: Power3.easeOut, x: '+=600', alpha:0, scale: 0})
@@ -196,6 +198,8 @@ if ($(window).width() > 767) {
   strengths_wrapper.delay( 0 );
   strengths_wrapper.duration( 2 );
 }
+
+
 
 
 // HTML bar (DESKTOP)
@@ -219,7 +223,7 @@ html_wrapper.duration( 3 );
 }
 
 // HTML bar (IPAD & lower)
-// if ($(window).width() > 767) {
+if ($(window).width() < 991) {
 	var html_wrapper = new TimelineMax();
 
 	html_wrapper.from($(".animated-bar-html"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -236,7 +240,7 @@ html_wrapper.duration( 3 );
   ;
   html_wrapper.delay( .15 );
 html_wrapper.duration( 3 );
-// }
+}
 
 
 // CSS bar (DESKTOP)
@@ -260,7 +264,7 @@ css_wrapper.duration( 3 );
 }
 
 // CSS bar (IPAD AND LOWER)
-// if ($(window).width() > 767) {
+if ($(window).width() < 991) {
 	var css_wrapper = new TimelineMax();
 
 	css_wrapper.from($(".animated-bar-css"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -277,7 +281,7 @@ css_wrapper.duration( 3 );
   ;
   css_wrapper.delay( .17 );
 css_wrapper.duration( 3 );
-// }
+}
 
 
 // Javascript bar (DESKTOP)
@@ -301,7 +305,7 @@ javascript_wrapper.duration( 3 );
 }
 
 // Javascript bar (IPAD AND LOWER)
-// if ($(window).width() > 767) {
+if ($(window).width() < 991) {
 	var javascript_wrapper = new TimelineMax();
 
 	javascript_wrapper.from($(".animated-bar-javascript"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -318,7 +322,7 @@ javascript_wrapper.duration( 3 );
   ;
   javascript_wrapper.delay( .19 );
 javascript_wrapper.duration( 3 );
-// }
+}
 
 
 // angular bar (DESKTOP)
@@ -342,7 +346,7 @@ angular_wrapper.duration( 3 );
 }
 
 // angular bar (IPAD AND LOWER)
-// if ($(window).width() > 767) {
+if ($(window).width() < 991) {
 	var angular_wrapper = new TimelineMax();
 
 	angular_wrapper.from($(".animated-bar-angular"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -359,7 +363,7 @@ angular_wrapper.duration( 3 );
   ;
   angular_wrapper.delay( .21 );
 angular_wrapper.duration( 3 );
-// }
+}
 
 
 // node bar (DESKTOP)
@@ -383,7 +387,7 @@ node_wrapper.duration( 3 );
 }
 
 // node bar (IPAD AND LOWER)
-// if ($(window).width() > 767) {
+if ($(window).width() < 991) {
 	var node_wrapper = new TimelineMax();
 
 	node_wrapper.from($(".animated-bar-node"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -400,7 +404,7 @@ node_wrapper.duration( 3 );
   ;
   node_wrapper.delay( .23 );
 node_wrapper.duration( 3 );
-// }
+}
 
 
 // photoshop bar (DESKTOP)
@@ -424,7 +428,7 @@ photoshop_wrapper.duration( 3 );
 }
 
 // photoshop bar (IPAD AND LOWER)
-// if ($(window).width() > 767) {
+if ($(window).width() < 991) {
 	var photoshop_wrapper = new TimelineMax();
 
 	photoshop_wrapper.from($(".animated-bar-photoshop"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
@@ -441,7 +445,7 @@ photoshop_wrapper.duration( 3 );
   ;
   photoshop_wrapper.delay( .25 );
 photoshop_wrapper.duration( 3 );
-// }
+}
 
 
 // PROJECTS
