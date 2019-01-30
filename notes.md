@@ -13,8 +13,7 @@
 * Tie into API's
 
 TO DO:
-* change active nav links on scroll
-* fix sputtering nav grow and shrink
+* nav links don't work if user at CONTACT area
 * animate dropdown nav links
 
 ACTIVE LINK CLASS ADD ON SCROLL

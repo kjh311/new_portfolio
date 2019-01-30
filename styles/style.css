@@ -10572,7 +10572,7 @@ div {
   /* Adds a transition effect when the padding is decreased */
   z-index: 99;
   color: white;
-  background: #1e3e63;
+  background: #1D3D62;
   border-bottom: 2px solid #04C2C9; }
   .navbar a {
     padding: 12px;
@@ -10670,7 +10670,7 @@ div {
 
 .about-container {
   background: #fff;
-  color: #1e3e63; }
+  color: #1D3D62; }
   .about-container .about-header-text {
     color: #444649;
     font-size: 30px;
@@ -10767,7 +10767,7 @@ div {
           .about-container .strengths .strength .strength-text {
             width: 25%; } }
       .about-container .strengths .strength .animated-bar {
-        background-color: #1e3e63;
+        background-color: #1D3D62;
         position: absolute;
         left: 0;
         top: 0;
@@ -10801,7 +10801,7 @@ div {
 
 .projects-container {
   background: #F5F5F5;
-  color: #1e3e63; }
+  color: #1D3D62; }
   .projects-container .projects-header-text {
     color: #444649;
     font-size: 30px;
@@ -10931,7 +10931,7 @@ div {
 
 .interests-container {
   background: #fff;
-  color: #1e3e63; }
+  color: #1D3D62; }
   .interests-container .interests-header {
     margin-top: 70px;
     color: #444649;
@@ -11014,7 +11014,7 @@ div {
       font-size: 1.2em;
       right: 0;
       left: 0;
-      color: #2b3349;
+      color: #175676;
       margin-left: auto;
       margin-right: auto; }
     .interests-container .interests .interests-title-active {
@@ -11038,7 +11038,7 @@ div {
       margin-top: -40px; }
 
 .contact-container {
-  background: #2b3349;
+  background: #175676;
   color: white;
   position: relative; }
   .contact-container .contact-header {
@@ -11132,7 +11132,7 @@ div {
 footer {
   color: white;
   height: 70px;
-  background: #1e3e63; }
+  background: #1D3D62; }
 
 .lightbox {
   width: 700px;
@@ -11148,7 +11148,7 @@ footer {
     margin: 20px; }
     .lightbox .sub-content .sub-content-header {
       font-size: 1em;
-      color: #2b3349; }
+      color: #175676; }
       @media (min-width: 576px) {
         .lightbox .sub-content .sub-content-header {
           font-size: 2em; } }
