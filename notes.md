@@ -31,6 +31,7 @@ https://greensock.com/forums/topic/9662-timelinemax-add-classes/
 
 animations:
 http://animista.net
+http://ianlunn.github.io/Hover/
 
 Animate numbers:
 https://codepen.io/GreenSock/pen/hzfji
