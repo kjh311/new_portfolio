@@ -155,6 +155,17 @@ $( document ).ready(function() {
 			$(".project-title-thrones").removeClass("project-title-active").addClass("project-title-deactive");
 	});
 
+	 $(".project-email").mouseover(function(){
+		$(".project-img-email").addClass('hidden');
+			$(".learn-more-button-email").removeClass("learn-more-deactive").addClass("learn-more-active");
+			$(".project-title-email").removeClass("project-title-deactive").addClass("project-title-active");
+	});
+	  $(".project-email").mouseleave(function(){
+		$(".project-img-email").removeClass('hidden');
+			$(".learn-more-button-email").removeClass("learn-more-active").addClass("learn-more-deactive");
+			$(".project-title-email").removeClass("project-title-active").addClass("project-title-deactive");
+	});
+
 
 	   // Change Z-index of Interests links
 	 $(".interest-art").mouseover(function(){

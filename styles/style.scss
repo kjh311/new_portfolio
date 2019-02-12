@@ -53,6 +53,7 @@ body {
 .container-fluid,
 .container,
 div {
+	// @extend %color-border;
     padding: 0;
     overflow: hidden;
 }
@@ -427,6 +428,10 @@ div {
         margin: auto;
         left: 0;
         right: 0;
+        // padding-bottom: 100px;
+    }
+    .project-wrapper{
+    	margin: 100px 0px 100px 0px;
     }
 
     .technologies {
@@ -565,8 +570,8 @@ div {
     }
 
     .projects {
-        margin: 70px 5% 0px 5%;
-        padding-bottom: 100px;
+        margin: 0px 5% 0px 5%;
+        // padding-bottom: 100px;
 
         .project {
             height: auto;
