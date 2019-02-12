@@ -16,6 +16,9 @@ TO DO:
 * nav links don't work if user at CONTACT area
 * animate dropdown nav links
 
+ICON ROLLOVER EFFECTS
+https://tympanus.net/codrops/2013/05/30/simple-icon-hover-effects/
+
 COUNT UP PLUGIN
 https://inorganik.github.io/countUp.js/
 

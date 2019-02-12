@@ -4,6 +4,8 @@
 @import "animista";
 @import "lity";
 @import "animate";
+// @import "default";
+// @import "component";
 @import "stars";
 
 
@@ -823,6 +825,7 @@ div {
                 -webkit-transform: scale(1);
                     -ms-transform: scale(1);
                         transform: scale(1);
+
             }
 
             .fa-icon:hover {
