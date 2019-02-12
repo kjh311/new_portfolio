@@ -567,6 +567,26 @@ if ($(window).width() > 767) {
 thrones.duration( 1.5 );
 }
 
+// EMAIL PROJECT
+if ($(window).width() > 767) {
+	var emailProject = new TimelineMax();
+
+	emailProject.from($(".project-email"), 0.33, {alpha:0})
+	.to($(".project-email"), 0.3, {alpha:1});
+
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects-container",	
+
+  })
+		.setTween(emailProject)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  emailProject.delay( .45 );
+emailProject.duration( 1.5 );
+}
+
 
 // INTERESTS
 if ($(window).width() > 767) {
