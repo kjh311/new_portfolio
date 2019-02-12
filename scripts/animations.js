@@ -1,3 +1,5 @@
+
+
 $( document ).ready(function() {
 
 
@@ -209,14 +211,45 @@ if ($(window).width() > 991) {
 	html_wrapper.from($(".animated-bar-html"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
 	.to($(".animated-bar-html"), 0.3, {ease: Power0.easeNone, scaleX:1});
 
+
+			
+
+
+
+
 	//  scene
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".pic-strengths",	
 
   })
+		// .setClassToggle('.animated-bar-html', 'animate')
 		.setTween(html_wrapper)
 		.addTo(controller)
    scene.reverse(false)  
+
+   // if((".animated-bar-html").hasClass("animate")){
+   	// if ($("#animated-bar-html").hasClass("animate")) {
+   // $('#html').each(function() {
+			//   var $this = $(this),
+			//       countTo = $this.attr('data-count');
+			//   $({ countNum: $this.text()}).animate({
+			//     countNum: countTo
+			//   },
+			//   {
+			//     duration: 2000,
+			//     easing:'linear',
+			//     step: function() {
+			//       $this.text(Math.floor(this.countNum));
+			//     },
+			//     complete: function() {
+			//       $this.text(this.countNum);
+			//       //alert('finished');
+			//     }
+
+			//   }); 
+			   
+			// });
+// }
   ;
   html_wrapper.delay( .15 );
 html_wrapper.duration( 3 );
@@ -228,6 +261,7 @@ if ($(window).width() < 991) {
 
 	html_wrapper.from($(".animated-bar-html"), 0.33, {ease: Power3.easeOut, scaleX:0, transformOrigin:"left"})
 	.to($(".animated-bar-html"), 0.3, {ease: Power0.easeNone, scaleX:1});
+
 
 	//  scene
 	var scene = new ScrollMagic.Scene({	

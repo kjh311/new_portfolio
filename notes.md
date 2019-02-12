@@ -16,6 +16,12 @@ TO DO:
 * nav links don't work if user at CONTACT area
 * animate dropdown nav links
 
+COUNT UP PLUGIN
+https://inorganik.github.io/countUp.js/
+
+NUMSCROLL with scroll
+http://demo.tinywall.net/numscroller/
+
 ACTIVE LINK CLASS ADD ON SCROLL
 http://scrollmagic.io/examples/basic/class_toggles.html
 (doesn't work)
