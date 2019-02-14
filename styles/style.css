@@ -12806,14 +12806,14 @@ a.text-dark:focus, a.text-dark:hover {
   -o-transition: 0.4s;
   transition: 0.4s; }
 
-html {
-  scroll-behavior: smooth; }
-
 body {
   background: black;
   color: white;
   font-size: 18px;
   font-family: 'Archivo', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
 
 .container-fluid,
 .container,
@@ -13304,6 +13304,55 @@ div {
   background: #175676;
   color: white;
   position: relative; }
+  .contact-container .icon-ul {
+    margin: 0;
+    padding: 0; }
+  .contact-container .icon-ul .icon-li {
+    list-style: none;
+    float: left;
+    margin: 60px 10px 60px 10px;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 50px;
+    position: relative;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    color: #262626;
+    z-index: 1;
+    color: #175676; }
+  .contact-container .icon-ul .icon-li:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #175676;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    z-index: -1; }
+  .contact-container .icon-ul .icon-li:hover:before {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02); }
+  .contact-container .icon-ul .icon-li:hover {
+    color: #fff; }
+  @media (min-width: 576px) {
+    .contact-container .icon-ul .icon-li {
+      margin: 60px 40px 60px 40px;
+      width: 85px;
+      height: 85px;
+      line-height: 85px; } }
   .contact-container .contact-header {
     margin-top: 70px;
     color: #444649;

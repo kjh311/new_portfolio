@@ -54,27 +54,6 @@ about_underline.duration( 1.5 );
 }
 
 
-// Fast Trait timeline
-if ($(window).width() > 767) {
-	var fast_trait = new TimelineMax();
-
-	fast_trait.from($(".fast-trait"), 0.33, {ease: Expo.easeOut, y: '+=300', alpha:0, scale: 0})
-	.to($(".fast-trait"), 0.3, {ease: Power0.easeNone, y: '0', alpha:1, scale: 1});
-
-	//  scene
-	var scene = new ScrollMagic.Scene({	
-    triggerElement: ".about-underline",	
-
-  })
-		.setTween(fast_trait)
-		.addTo(controller)
-   scene.reverse(false)  
-  ;
-  fast_trait.delay( 0 );
-  fast_trait.duration( 2 );
-}
-
-
 // Responsive Trait timeline
 if ($(window).width() > 767) {
 	var responsive_trait = new TimelineMax();
@@ -91,29 +70,28 @@ if ($(window).width() > 767) {
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  responsive_trait.delay( 0.05 );
+  responsive_trait.delay( 0.00 );
 responsive_trait.duration( 2 );
 }
 
-
-// Intuitive Trait timeline
+// Fast Trait timeline
 if ($(window).width() > 767) {
-	var intuitive_trait = new TimelineMax();
+	var fast_trait = new TimelineMax();
 
-	intuitive_trait.from($(".intuitive-trait"), 0.33, {ease: Expo.easeOut, y: '+=300', alpha:0, scale: 0})
-	.to($(".intuitive-trait"), 0.3, {ease: Power0.easeNone, y: '0', alpha:1, scale: 1});
+	fast_trait.from($(".fast-trait"), 0.33, {ease: Expo.easeOut, y: '+=300', alpha:0, scale: 0})
+	.to($(".fast-trait"), 0.3, {ease: Power0.easeNone, y: '0', alpha:1, scale: 1});
 
 	//  scene
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".about-underline",	
 
   })
-		.setTween(intuitive_trait)
+		.setTween(fast_trait)
 		.addTo(controller)
    scene.reverse(false)  
   ;
-  intuitive_trait.delay( 0.1 );
-intuitive_trait.duration( 2 );
+  fast_trait.delay( 0.05 );
+  fast_trait.duration( 2 );
 }
 
 
@@ -133,9 +111,32 @@ if ($(window).width() > 767) {
 		.addTo(controller)
    scene.reverse(false)  
   ;
-	dynamic_trait.delay( 0.15 );
+	dynamic_trait.delay( 0.1 );
 	dynamic_trait.duration( 2 );
 }
+
+// Intuitive Trait timeline
+if ($(window).width() > 767) {
+	var intuitive_trait = new TimelineMax();
+
+	intuitive_trait.from($(".intuitive-trait"), 0.33, {ease: Expo.easeOut, y: '+=300', alpha:0, scale: 0})
+	.to($(".intuitive-trait"), 0.3, {ease: Power0.easeNone, y: '0', alpha:1, scale: 1});
+
+	//  scene
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".about-underline",	
+
+  })
+		.setTween(intuitive_trait)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  intuitive_trait.delay( 0.15 );
+intuitive_trait.duration( 2 );
+}
+
+
+
 
 
 // Pic Wrapper timeline
@@ -801,8 +802,8 @@ resume.duration( 1.5 );
 if ($(window).width() > 767) {
 	var email = new TimelineMax();
 
-	email.from($(".fa-envelope-square"), 0.33, { alpha:0 })
-	.to($(".fa-envelope-square"), 0.3, {  alpha:1});
+	email.from($(".icon-mail"), 0.33, { alpha:0 })
+	.to($(".icon-mail"), 0.3, {  alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".contact-container",	
@@ -820,8 +821,8 @@ email.duration( .5 );
 if ($(window).width() > 767) {
 	var linkedin = new TimelineMax();
 
-	linkedin.from($(".fa-linkedin"), 0.33, { alpha:0})
-	.to($(".fa-linkedin"), 0.3, { alpha:1});
+	linkedin.from($(".icon-linkedin"), 0.33, { alpha:0})
+	.to($(".icon-linkedin"), 0.3, { alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".contact-container",	
@@ -839,8 +840,8 @@ linkedin.duration( .5 );
 if ($(window).width() > 767) {
 	var gitub = new TimelineMax();
 
-	gitub.from($(".fa-github-square"), 0.33, {  alpha:0})
-	.to($(".fa-github-square"), 0.3, { alpha:1});
+	gitub.from($(".icon-github"), 0.33, {  alpha:0})
+	.to($(".icon-github"), 0.3, { alpha:1});
 
 	var scene = new ScrollMagic.Scene({	
     triggerElement: ".contact-container",	

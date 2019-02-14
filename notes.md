@@ -16,6 +16,9 @@ TO DO:
 * nav links don't work if user at CONTACT area
 * animate dropdown nav links
 
+ICON ROLLOVER EFFECTS:
+https://www.youtube.com/watch?v=tbq69YMNfgo
+
 ICON ROLLOVER EFFECTS
 https://tympanus.net/codrops/2013/05/30/simple-icon-hover-effects/
 
@@ -33,7 +36,7 @@ ACTIVE LINK CHANGE WITH BOOTSTRAP
 https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
 
 Animated Bar Charts
-https://tympanus.net/Tutorials/Animated3DBarChart/38th Annual Spirit of San Pedro Holiday Parade
+https://tympanus.net/Tutorials/Animated3DBarChart/38th 
 
 Add class with GSAP:
 https://greensock.com/forums/topic/9662-timelinemax-add-classes/
