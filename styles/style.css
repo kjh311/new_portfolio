@@ -13959,7 +13959,8 @@ body {
   background: black;
   color: white;
   font-size: 18px;
-  font-family: 'Archivo', sans-serif; }
+  font-family: 'Archivo', sans-serif;
+  user-select: none; }
 
 html {
   scroll-behavior: smooth; }
@@ -14001,7 +14002,8 @@ div {
     font-weight: bold;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s; }
+    transition: 0.4s;
+    margin-right: 50px; }
   .navbar .navbar-toggler {
     -webkit-transition: 0.4s;
     margin-right: 10px;
@@ -14504,7 +14506,7 @@ div {
     color: #fff; }
   @media (min-width: 576px) {
     .contact-container .icon-ul .icon-li {
-      margin: 20px 40px 60px 40px;
+      margin: 20px 40px 90px 40px;
       width: 85px;
       height: 85px;
       line-height: 85px; } }
@@ -14628,8 +14630,10 @@ div {
 
 footer {
   color: white;
-  height: 70px;
+  height: 90px;
   background: #1D3D62; }
+  footer .copywrite {
+    margin: 0px 0px 30px 0px; }
 
 .lightbox {
   width: 700px;
@@ -14703,7 +14707,7 @@ footer {
     height: 75px;
     display: absolute;
     bottom: 0;
-    background-color: rgba(228, 233, 237, 0.3); }
+    background-color: rgba(228, 233, 237, 0.4); }
   .lightbox .carousel-control-icon {
     width: 30px;
     height: 30px; }
