@@ -13986,6 +13986,9 @@ div {
   color: white;
   background: #1D3D62;
   border-bottom: 2px solid #04C2C9; }
+  @media (min-width: 992px) {
+    .navbar {
+      height: 60px; } }
   .navbar a {
     padding: 12px;
     text-decoration: none;
@@ -13998,10 +14001,10 @@ div {
     font-weight: bold;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s;
-    margin-right: 50px; }
+    transition: 0.4s; }
   .navbar .navbar-toggler {
     -webkit-transition: 0.4s;
+    margin-right: 10px;
     -o-transition: 0.4s;
     transition: 0.4s;
     width: 66px;
@@ -14081,6 +14084,7 @@ div {
   color: #1D3D62; }
   .about-container .about-header-text {
     color: #444649;
+    letter-spacing: 3px;
     font-size: 30px;
     margin-top: 70px;
     padding: 10px 0px;
@@ -14213,6 +14217,7 @@ div {
   .projects-container .projects-header-text {
     color: #444649;
     font-size: 30px;
+    letter-spacing: 3px;
     margin-top: 70px;
     padding: 10px 0px;
     -webkit-transition: all 0.4s ease-out;
@@ -14347,6 +14352,7 @@ div {
   .interests-container .interests-header {
     margin-top: 70px;
     color: #444649;
+    letter-spacing: 3px;
     font-size: 30px;
     padding: 10px 0px;
     -webkit-transition: all 0.4s ease-out;
@@ -14459,7 +14465,7 @@ div {
   .contact-container .icon-ul .icon-li {
     list-style: none;
     float: left;
-    margin: 60px 10px 60px 10px;
+    margin: 20px 10px 60px 10px;
     width: 85px;
     height: 85px;
     line-height: 85px;
@@ -14498,12 +14504,13 @@ div {
     color: #fff; }
   @media (min-width: 576px) {
     .contact-container .icon-ul .icon-li {
-      margin: 60px 40px 60px 40px;
+      margin: 20px 40px 60px 40px;
       width: 85px;
       height: 85px;
       line-height: 85px; } }
   .contact-container .contact-header {
     margin-top: 70px;
+    letter-spacing: 3px;
     color: #444649;
     font-size: 30px;
     padding: 10px 0px;
@@ -14532,32 +14539,53 @@ div {
   .contact-container .resume-a-tag {
     text-decoration: none; }
   .contact-container .resume-link {
-    font-size: 1.5em;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    color: #fff;
-    width: 200px;
     position: relative;
-    right: 0;
+    border: 1px solid #175676;
+    background: none;
+    color: #F5F5F5;
+    width: 240px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 14px;
+    transition: .6s;
+    overflow: hidden; }
+  .contact-container .resume-link:focus {
+    outline: none; }
+  .contact-container .resume-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 60px;
+    height: 100%;
     left: 0;
-    margin: 20px auto;
-    background-color: #04C2C9;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
+    top: 0;
+    opacity: 0.5;
+    filter: blur(30px);
+    transform: translateX(-130px) skew(-15deg); }
+  .contact-container .resume-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15); }
   .contact-container .resume-link:hover {
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    color: #04C2C9;
-    background-color: #fff; }
+    background: #175676;
+    cursor: pointer; }
+  .contact-container .resume-link:hover:before {
+    transform: translateX(300px) skew(-15deg);
+    opacity: .6;
+    transition: .7s; }
+  .contact-container .resume-link:hover:after {
+    transform: translateX(300px) skew(-15deg);
+    opacity: 1;
+    transition: .7s; }
   .contact-container .fa-file {
     margin: 0px 10px 0px 10px; }
   .contact-container .icons-div {

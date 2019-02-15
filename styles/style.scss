@@ -69,7 +69,7 @@ div {
 .navbar {
     overflow: hidden;
     top: 0;
-    padding: 5px 10px;
+        padding: 5px 10px;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
@@ -79,6 +79,10 @@ div {
     color: white;
     background: $footer;
     border-bottom: 2px solid $nav-bottom;
+    @include media-breakpoint-up(lg) { 
+      height: 60px;
+
+    }
 
     a {
         padding: 12px;
@@ -96,12 +100,17 @@ div {
         -o-transition: 0.4s;
         transition: 0.4s;
         margin-right: 50px;
+    //     @include media-breakpoint-up(lg) { 
+    //   margin-right: 20px;
+
+    // }
     }
 
     .navbar-collapse {}
 
     .navbar-toggler {
         -webkit-transition: 0.4s;
+        margin-right: 10px;
         -o-transition: 0.4s;
         transition: 0.4s;
         width: 66px;
@@ -214,6 +223,7 @@ div {
 
     .about-header-text {
         color: $dark-text;
+        letter-spacing: 3px;
         font-size: 30px;
         margin-top: 70px;
         padding: 10px 0px;
@@ -408,6 +418,7 @@ div {
     .projects-header-text {
         color: $dark-text;
         font-size: 30px;
+        letter-spacing: 3px;
         margin-top: 70px;
         padding: 10px 0px;
         -webkit-transition: all 0.4s ease-out;
@@ -589,6 +600,7 @@ div {
     .interests-header {
         margin-top: 70px;
         color: $dark-text;
+        letter-spacing: 3px;
         font-size: 30px;
         padding: 10px 0px;
         -webkit-transition: all 0.4s ease-out;
@@ -731,7 +743,7 @@ div {
     .icon-ul .icon-li {
         list-style: none;
         float: left;
-        margin: 60px 10px 60px 10px;
+        margin: 20px 10px 60px 10px;
         width: 85px;
         height: 85px;
         line-height: 85px;
@@ -780,7 +792,7 @@ div {
 
     @include media-breakpoint-up(sm) {
         .icon-ul .icon-li {
-            margin: 60px 40px 60px 40px;
+            margin: 20px 40px 60px 40px;
             width: 85px;
             height: 85px;
             line-height: 85px;
@@ -789,6 +801,7 @@ div {
 
     .contact-header {
         margin-top: 70px;
+        letter-spacing: 3px;
         color: $dark-text;
         font-size: 30px;
         padding: 10px 0px;
@@ -829,34 +842,102 @@ div {
     }
 
     .resume-link {
-        font-size: 1.5em;
-        padding: 10px;
-        border-radius: 20px;
-        cursor: pointer;
-        color: #fff;
-        width: 200px;
+        // font-size: 1.5em;
+        // padding: 10px;
+        // border-radius: 20px;
+        // cursor: pointer;
+        // color: #fff;
+        // width: 200px;
+        // position: relative;
+        // right: 0;
+        // left: 0;
+        // margin: 20px auto;
+        // background-color: $nav-bottom;
+        // -webkit-transition: 0.4s;
+        // -o-transition: 0.4s;
+        // transition: 0.4s;
+        // -webkit-transform: scale(1);
+        // -ms-transform: scale(1);
+        // transform: scale(1);
+
         position: relative;
-        right: 0;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+  //       margin-left: auto; 
+  // margin-right: auto;   
+  // right: 0;
+  //   left: 0;
+
+        border: 1px solid $dark-grey;
+        background: none;
+        color: $light-grey;
+        width: 240px;
+        height: 80px;
+        // border: 1px  solid #338033;
+        font-size: 30px;
+        border-radius: 14px;
+        transition: .6s;
+        overflow: hidden;
+    }
+
+    .resume-link:focus{
+        outline: none;
+    }
+
+    .resume-link:before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255,255,255,0.5);
+        width: 60px;
+        height: 100%;
         left: 0;
-        margin: 20px auto;
-        background-color: $nav-bottom;
-        -webkit-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-        -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
+        top: 0;
+        opacity: 0.5;
+        filter: blur(30px);
+        transform: translateX(-130px) skew(-15deg);
+    }
+
+    .resume-link:after{
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255,255,255,0.2);
+        width: 30px;
+        height: 100%;
+        left: 30px;
+        top: 0;
+        opacity: 0;
+        filter: blur(30px);
+        transform: translate(-100px) scaleX(-15);
     }
 
     .resume-link:hover {
-        -webkit-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        color: $nav-bottom;
-        background-color: #fff;
+        // -webkit-transition: 0.4s;
+        // -o-transition: 0.4s;
+        // transition: 0.4s;
+        // -webkit-transform: scale(1.1);
+        // -ms-transform: scale(1.1);
+        // transform: scale(1.1);
+        // color: $nav-bottom;
+        // background-color: #fff;
+
+        // background: #144d6b;
+        background: #175676;
+        cursor: pointer;
+
+    }
+    .resume-link:hover:before{
+        transform: translateX(300px) skew(-15deg);
+        opacity: .6;
+        transition: .7s;
+    }
+
+    .resume-link:hover:after{
+        transform: translateX(300px) skew(-15deg);
+        opacity: 1;
+        transition: .7s;
     }
 
     .fa-file {
