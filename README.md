@@ -1,4 +1,4 @@
-Creating a new portfolio website
+Creating a new portfolio website. 2019
 
 
 Technologies:
@@ -12,6 +12,7 @@ Technologies:
 * Bootstrap 4
 * Lity Lightbox
 * Numscroll.js
+* Creative Link Effects
 
 ![alt text](assets/site.png?raw=true "Title")
 
