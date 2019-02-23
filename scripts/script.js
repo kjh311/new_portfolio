@@ -120,8 +120,9 @@ $( document ).ready(function() {
 	     });
 	 });
 
+// Change Z-index of project links
 
-	 // Change Z-index of project links
+// BROOKS
 	 $(".project-brooks").mouseover(function(){
 		$(".project-img-brooks").addClass('hidden');
 			$(".learn-more-button-brooks").removeClass("learn-more-deactive").addClass("learn-more-active");
@@ -133,6 +134,7 @@ $( document ).ready(function() {
 			$(".project-title-brooks").removeClass("project-title-active").addClass("project-title-deactive");
 	});
 
+// MOVIE BUDDY
 	 $(".project-movie").mouseover(function(){
 		$(".project-img-movie").addClass('hidden');
 			$(".learn-more-button-movie").removeClass("learn-more-deactive").addClass("learn-more-active");
@@ -144,6 +146,7 @@ $( document ).ready(function() {
 			$(".project-title-movie").removeClass("project-title-active").addClass("project-title-deactive");
 	});
 
+// GAME OF THRONES
 	 $(".project-thrones").mouseover(function(){
 		$(".project-img-thrones").addClass('hidden');
 			$(".learn-more-button-thrones").removeClass("learn-more-deactive").addClass("learn-more-active");
@@ -155,6 +158,7 @@ $( document ).ready(function() {
 			$(".project-title-thrones").removeClass("project-title-active").addClass("project-title-deactive");
 	});
 
+// HTML EMAIL
 	 $(".project-email").mouseover(function(){
 		$(".project-img-email").addClass('hidden');
 			$(".learn-more-button-email").removeClass("learn-more-deactive").addClass("learn-more-active");
@@ -166,8 +170,22 @@ $( document ).ready(function() {
 			$(".project-title-email").removeClass("project-title-active").addClass("project-title-deactive");
 	});
 
+// SVG ANIMATION
+	$(".project-svg").mouseover(function(){
+		$(".project-img-svg").addClass('hidden');
+			$(".learn-more-button-svg").removeClass("learn-more-deactive").addClass("learn-more-active");
+			$(".project-title-svg").removeClass("project-title-deactive").addClass("project-title-active");
+	});
+	  $(".project-svg").mouseleave(function(){
+		$(".project-img-svg").removeClass('hidden');
+			$(".learn-more-button-svg").removeClass("learn-more-active").addClass("learn-more-deactive");
+			$(".project-title-svg").removeClass("project-title-active").addClass("project-title-deactive");
+	});
 
-	   // Change Z-index of Interests links
+
+// Change Z-index of Interests links
+
+// ART
 	 $(".interest-art").mouseover(function(){
 		$(".interests-img-art").addClass('hidden');
 			$(".learn-more-button-art").removeClass("learn-more-deactive").addClass("learn-more-active");
@@ -179,6 +197,7 @@ $( document ).ready(function() {
 			$(".interests-title-art").removeClass("interests-title-active").addClass("interests-title-deactive");
 	});
 
+// ANIMATION
 	    $(".interest-animation").mouseover(function(){
 		$(".interests-img-animation").addClass('hidden');
 			$(".learn-more-button-animation").removeClass("learn-more-deactive").addClass("learn-more-active");
@@ -189,6 +208,8 @@ $( document ).ready(function() {
 			$(".learn-more-button-animation").removeClass("learn-more-active").addClass("learn-more-deactive");
 			$(".interests-title-animation").removeClass("interests-title-active").addClass("interests-title-deactive");
 	});
+
+// TRAVEL
 	    $(".interest-travel").mouseover(function(){
 		$(".interests-img-travel").addClass('hidden');
 			$(".learn-more-button-travel").removeClass("learn-more-deactive").addClass("learn-more-active");

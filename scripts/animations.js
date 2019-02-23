@@ -622,6 +622,26 @@ if ($(window).width() > 767) {
 emailProject.duration( 1.5 );
 }
 
+// SVG ANIMATE PROJECT
+if ($(window).width() > 767) {
+	var svgProject = new TimelineMax();
+
+	svgProject.from($(".project-svg"), 0.33, {alpha:0})
+	.to($(".project-svg"), 0.3, {alpha:1});
+
+
+	var scene = new ScrollMagic.Scene({	
+    triggerElement: ".projects-container",	
+
+  })
+		.setTween(svgProject)
+		.addTo(controller)
+   scene.reverse(false)  
+  ;
+  svgProject.delay( .5 );
+svgProject.duration( 1.5 );
+}
+
 
 // INTERESTS
 if ($(window).width() > 767) {
