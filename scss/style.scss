@@ -753,6 +753,9 @@ div {
     background: $dark-grey;
     color: white;
     position: relative;
+    min-height: 550px;
+    height: 100vh;
+
 
 
     .icon-ul {

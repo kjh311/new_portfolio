@@ -14463,7 +14463,9 @@ div {
 .contact-container {
   background: #175676;
   color: white;
-  position: relative; }
+  position: relative;
+  min-height: 550px;
+  height: 100vh; }
   .contact-container .icon-ul {
     margin: 0;
     padding: 0; }
