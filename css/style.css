@@ -14025,7 +14025,8 @@ div {
   background: -o-radial-gradient(bottom, ellipse, #1e3e63 0%, #090a0f 100%);
   background: radial-gradient(ellipse at bottom, #1e3e63 0%, #090a0f 100%);
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 100vh !important; }
   .intro-container .right {
     -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -14071,8 +14072,7 @@ div {
     -o-transition: 0.4s;
     transition: 0.4s; }
   .intro-container .intro-div {
-    width: 100vw;
-    height: 100vh !important; }
+    width: 100vw; }
 
 .about-container {
   background: #fff;
