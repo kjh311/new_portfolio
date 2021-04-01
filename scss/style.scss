@@ -17,6 +17,7 @@ $dark-text: #444649;
 $medium-text: #6F6F6F;
 
 
+
 // $nav-blue: #03108f;
 $light-grey: #F5F5F5;
 $medium-grey: #bcbaba;
@@ -132,16 +133,19 @@ div {
 }
 
 // INTRO CONTAINER
+
 .intro-container {
     background: -webkit-radial-gradient(bottom, ellipse, #1e3e63 0%, #090a0f 100%);
     background: -o-radial-gradient(bottom, ellipse, #1e3e63 0%, #090a0f 100%);
     background: radial-gradient(ellipse at bottom, #1e3e63 0%, #090a0f 100%);
     overflow: hidden;
     position: relative;
-    padding: 140px 0px 300px 0px;
+   // padding: 140px 0px 300px 0px;
+   // height: 100vh !important;
+   // height: 100vh;
 
     @include media-breakpoint-up(md) {
-        padding: 100px 0px 300px 0px;
+        // padding: 100px 0px 300px 0px;
     }
 
     .right {
@@ -202,15 +206,16 @@ div {
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
-
     }
+
 
     .intro-div {
         width: 100vw;
-        height: 150px;
+        // height: 150px;
+        height: 100vh !important;
 
         @include media-breakpoint-up(md) {
-            height: 300px;
+            // height: 300px;
         }
     }
 }
