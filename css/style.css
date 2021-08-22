@@ -14722,13 +14722,14 @@ footer {
     height: 75px;
     display: absolute;
     bottom: 0;
-    background-color: rgba(228, 233, 237, 0.4);
-    border: 3px solid rgba(0, 0, 0, 0.5); }
+    background-color: rgba(214, 214, 214, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    transition: all 0.3s; }
+  .lightbox .carousel-control:hover {
+    transition: all 0.3s; }
   .lightbox .carousel-control-icon {
     width: 30px;
-    height: 30px;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.3); }
+    height: 30px; }
   .lightbox .carousel-item-art {
     max-height: 500px;
     height: auto;

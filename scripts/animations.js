@@ -661,8 +661,26 @@ $(document).ready(function () {
       .setTween(temple)
       .addTo(controller);
     scene.reverse(false);
-    temple.delay(0.25);
+    temple.delay(0.2);
     temple.duration(1.5);
+  }
+
+  // PAULA PROJECT
+  if ($(window).width() > 767) {
+    var paula = new TimelineMax();
+
+    paula
+      .from($(".project-paula"), 0.33, { alpha: 0 })
+      .to($(".project-paula"), 0.3, { alpha: 1 });
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: ".projects-container",
+    })
+      .setTween(paula)
+      .addTo(controller);
+    scene.reverse(false);
+    paula.delay(0.25);
+    paula.duration(1.5);
   }
 
   // BROOKS PROJECT

@@ -1127,15 +1127,20 @@ footer {
     height: 75px;
     display: absolute;
     bottom: 0;
-    background-color: rgba(228, 233, 237, 0.4);
+    background-color: rgba(214, 214, 214, 0.8);
     border: 3px solid rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+  }
+
+  .carousel-control:hover {
+    transition: all 0.3s;
   }
 
   .carousel-control-icon {
     width: 30px;
     height: 30px;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+    // -webkit-text-stroke-width: 3px;
+    // -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
     // border: 3px solid rgba(0, 0, 0, 0.5);
   }
 

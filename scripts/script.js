@@ -129,6 +129,26 @@ $(document).ready(function () {
       .addClass("project-title-deactive");
   });
 
+  // PAULA DANZIGER
+  $(".project-paula").mouseover(function () {
+    $(".project-img-paula").addClass("hidden");
+    $(".learn-more-button-paula")
+      .removeClass("learn-more-deactive")
+      .addClass("learn-more-active");
+    $(".project-title-paula")
+      .removeClass("project-title-deactive")
+      .addClass("project-title-active");
+  });
+  $(".project-paula").mouseleave(function () {
+    $(".project-img-paula").removeClass("hidden");
+    $(".learn-more-button-paula")
+      .removeClass("learn-more-active")
+      .addClass("learn-more-deactive");
+    $(".project-title-paula")
+      .removeClass("project-title-active")
+      .addClass("project-title-deactive");
+  });
+
   // BROOKS
   $(".project-brooks").mouseover(function () {
     $(".project-img-brooks").addClass("hidden");
