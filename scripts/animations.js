@@ -647,6 +647,24 @@ $(document).ready(function () {
     technologies.duration(1.5);
   }
 
+  // HABIT PROJECT
+  if ($(window).width() > 767) {
+    var habit = new TimelineMax();
+
+    habit
+      .from($(".project-habit"), 0.33, { alpha: 0 })
+      .to($(".project-habit"), 0.3, { alpha: 1 });
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: ".projects-container",
+    })
+      .setTween(habit)
+      .addTo(controller);
+    scene.reverse(false);
+    habit.delay(0.15);
+    habit.duration(1.5);
+  }
+
   // TEMPLE PROJECT
   if ($(window).width() > 767) {
     var temple = new TimelineMax();

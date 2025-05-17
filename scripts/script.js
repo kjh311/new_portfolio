@@ -109,6 +109,26 @@ $(document).ready(function () {
 
   // Change Z-index of project links
 
+  // HABIT
+  $(".project-habit").mouseover(function () {
+    $(".project-img-habit").addClass("hidden");
+    $(".learn-more-button-habit")
+      .removeClass("learn-more-deactive")
+      .addClass("learn-more-active");
+    $(".project-title-habit")
+      .removeClass("project-title-deactive")
+      .addClass("project-title-active");
+  });
+  $(".project-habit").mouseleave(function () {
+    $(".project-img-habit").removeClass("hidden");
+    $(".learn-more-button-habit")
+      .removeClass("learn-more-active")
+      .addClass("learn-more-deactive");
+    $(".project-title-habit")
+      .removeClass("project-title-active")
+      .addClass("project-title-deactive");
+  });
+
   // TEMPLE
   $(".project-temple").mouseover(function () {
     $(".project-img-temple").addClass("hidden");

@@ -1,20 +1,22 @@
-* Sticky Nav Bar that grows at top, shrinks as user scrolls down
+- Sticky Nav Bar that grows at top, shrinks as user scrolls down
 
-* SVG animation
+- SVG animation
 
-* parallax?
+- parallax?
 
-* animated icon on hover
+- animated icon on hover
 
 ##For Projects I want to showcase to a potential employer that I can:
-* DESIGN websites
-* showcase Animation and Transistions (UI/UX developer)
-* Solve proplems (JS)(age gate/)
-* Tie into API's
+
+- DESIGN websites
+- showcase Animation and Transistions (UI/UX developer)
+- Solve proplems (JS)(age gate/)
+- Tie into API's
 
 TO DO:
-* nav links don't work if user at CONTACT area
-* animate dropdown nav links
+
+- nav links don't work if user at CONTACT area
+- animate dropdown nav links
 
 ICON ROLLOVER EFFECTS:
 https://www.youtube.com/watch?v=tbq69YMNfgo
@@ -36,7 +38,7 @@ ACTIVE LINK CHANGE WITH BOOTSTRAP
 https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
 
 Animated Bar Charts
-https://tympanus.net/Tutorials/Animated3DBarChart/38th 
+https://tympanus.net/Tutorials/Animated3DBarChart/38th
 
 Add class with GSAP:
 https://greensock.com/forums/topic/9662-timelinemax-add-classes/
@@ -83,3 +85,6 @@ https://codepen.io/mikeK/pen/mmdJjy?editors=1010
 
 Lity Lightbox:
 https://sorgalla.com/lity/
+
+SASS WATCH:
+sass --watch scss/style.scss css/style.css
