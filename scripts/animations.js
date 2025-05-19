@@ -433,12 +433,12 @@ $(document).ready(function () {
     var angular_wrapper = new TimelineMax();
 
     angular_wrapper
-      .from($(".animated-bar-angular"), 0.33, {
+      .from($(".animated-bar-angular"), 0.5, {
         ease: Power3.easeOut,
         scaleX: 0,
         transformOrigin: "left",
       })
-      .to($(".animated-bar-angular"), 0.3, {
+      .to($(".animated-bar-angular"), 0.5, {
         ease: Power0.easeNone,
         scaleX: 1,
       });
@@ -459,12 +459,12 @@ $(document).ready(function () {
     var angular_wrapper = new TimelineMax();
 
     angular_wrapper
-      .from($(".animated-bar-angular"), 0.33, {
+      .from($(".animated-bar-angular"), 0.5, {
         ease: Power3.easeOut,
         scaleX: 0,
         transformOrigin: "left",
       })
-      .to($(".animated-bar-angular"), 0.3, {
+      .to($(".animated-bar-angular"), 0.5, {
         ease: Power0.easeNone,
         scaleX: 1,
       });
@@ -645,6 +645,24 @@ $(document).ready(function () {
     scene.reverse(false);
     technologies.delay(0.1);
     technologies.duration(1.5);
+  }
+
+  // BUDGET PROJECT
+  if ($(window).width() > 767) {
+    var budget = new TimelineMax();
+
+    budget
+      .from($(".project-budget"), 0.33, { alpha: 0 })
+      .to($(".project-budget"), 0.3, { alpha: 1 });
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: ".projects-container",
+    })
+      .setTween(budget)
+      .addTo(controller);
+    scene.reverse(false);
+    budget.delay(0);
+    budget.duration(1.5);
   }
 
   // HABIT PROJECT

@@ -109,6 +109,26 @@ $(document).ready(function () {
 
   // Change Z-index of project links
 
+  // BUDGET
+  $(".project-budget").mouseover(function () {
+    $(".project-img-budget").addClass("hidden");
+    $(".learn-more-button-budget")
+      .removeClass("learn-more-deactive")
+      .addClass("learn-more-active");
+    $(".project-title-budget")
+      .removeClass("project-title-deactive")
+      .addClass("project-title-active");
+  });
+  $(".project-budget").mouseleave(function () {
+    $(".project-img-budget").removeClass("hidden");
+    $(".learn-more-button-budget")
+      .removeClass("learn-more-active")
+      .addClass("learn-more-deactive");
+    $(".project-title-budget")
+      .removeClass("project-title-active")
+      .addClass("project-title-deactive");
+  });
+
   // HABIT
   $(".project-habit").mouseover(function () {
     $(".project-img-habit").addClass("hidden");
