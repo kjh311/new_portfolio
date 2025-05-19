@@ -661,7 +661,7 @@ $(document).ready(function () {
       .setTween(budget)
       .addTo(controller);
     scene.reverse(false);
-    budget.delay(0);
+    budget.delay(0.1);
     budget.duration(1.5);
   }
 
