@@ -433,12 +433,12 @@ $(document).ready(function () {
     var angular_wrapper = new TimelineMax();
 
     angular_wrapper
-      .from($(".animated-bar-angular"), 0.5, {
+      .from($(".animated-bar-angular"), 0.8, {
         ease: Power3.easeOut,
         scaleX: 0,
         transformOrigin: "left",
       })
-      .to($(".animated-bar-angular"), 0.5, {
+      .to($(".animated-bar-angular"), 0.8, {
         ease: Power0.easeNone,
         scaleX: 1,
       });
