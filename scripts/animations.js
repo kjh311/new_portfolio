@@ -433,12 +433,12 @@ $(document).ready(function () {
     var angular_wrapper = new TimelineMax();
 
     angular_wrapper
-      .from($(".animated-bar-angular"), 0.8, {
+      .from($(".animated-bar-angular"), 0.5, {
         ease: Power3.easeOut,
         scaleX: 0,
         transformOrigin: "left",
       })
-      .to($(".animated-bar-angular"), 0.8, {
+      .to($(".animated-bar-angular"), 0.5, {
         ease: Power0.easeNone,
         scaleX: 1,
       });
@@ -661,7 +661,7 @@ $(document).ready(function () {
       .setTween(budget)
       .addTo(controller);
     scene.reverse(false);
-    budget.delay(0.1);
+    budget.delay(0);
     budget.duration(1.5);
   }
 
